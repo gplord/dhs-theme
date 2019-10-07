@@ -1,0 +1,1520 @@
+/* DHS (Digital Humanities Scholarship) Theme Styles -------------------------------------------- */
+/* Originally built for mina-loy.com ------------------------------------------------------------ */
+/* Built by Greg Lord - gplord@gmail.com -------------------------------------------------------- */
+
+a:hover {
+  text-decoration: none;
+}
+
+a.navbar-brand {
+  /* Custom Logo file here */
+  background: url('../images/dhs-logo-large.png') no-repeat !important;
+  background-size: contain !important;
+  display: block;
+  height: 70px;
+  width: 360px;
+  color: transparent;
+}
+
+a.navbar-brand:focus, a.navbar-brand:hover {
+  color: transparent;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-brand {
+  color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #333;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  background: #eee;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+#front-page-template .nk-awb {
+  height: 500px;
+  padding-top: 150px;
+}
+
+.nk-awb {
+  height: 500px;
+  padding-top: 150px;
+}
+
+#front-page-template h1, #front-page-template h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#front-page-template h1 {
+  font-size: 72px;
+  margin-bottom: 0.5em;
+}
+
+#front-page-template h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  padding-top: 0;
+}
+
+.wrapper-fullscreen {
+  padding-bottom: 0;
+}
+
+.container {
+  padding-top: 0;
+}
+
+.nk-awb p {
+  display: none;
+}
+
+.navbar-title {
+  background-color: white !important;
+  padding: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-title .menu-item a, .navbar-footer .menu-item a {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav li.menu-item-has-children {
+  text-transform: uppercase;
+}
+
+.dropdown-menu.show li.nav-item a {
+  text-transform: none;
+}
+
+.navbar-title li, .navbar-footer li {
+  margin-left: 1em;
+}
+
+.navbar-title li ul li, .navbar-footer li ul li {
+  margin-left: 0;
+}
+
+.navbar-title li.nav-item:hover, .navbar-footer li.nav-item:hover {
+  background: #eee;
+}
+
+.navbar li a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a.navbar-brand {
+  text-indent: -9999em;
+}
+
+#parallax-front-dark {
+  height: 400px;
+}
+
+.admin-bar .fixed-top {
+  margin-top: 32px !important;
+}
+
+body {
+  margin-top: 150px;
+}
+
+
+main.site-main #front-page-template article {
+  /* Front page layout margin, customized for parallax background area */
+  margin-top: -80px;
+}
+
+#front-page-template {
+  text-align: center;
+}
+
+#front-page-template p.lead {
+  margin-top: 5em;
+}
+
+p.lead {
+  font-size: 24px;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  color: #333;
+  font-family: 'Sorts Mill Goudy', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.entry-header::after {
+  border-bottom: 1px solid #000;
+  content: "";
+  display: block;
+  margin: 0 auto 60px;
+  padding-bottom: 30px;
+  width: 25%;
+}
+
+.entry-header.biography::after {
+  margin-bottom: 0;
+}
+
+.entry-content {
+  padding-top: 2em;
+}
+
+.entry-content>.nk-awb:first-child {
+  margin-top: -2em;
+  margin-bottom: 2em;
+}
+
+.pt-cv-wrapper {
+  background: #eee;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+h4.pt-cv-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.view-essays .pt-cv-content-item {
+  border-bottom: none;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.view-essays .pt-cv-content-item:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.view-essays .pt-cv-readmore {
+  display: block;
+  text-align: right;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  padding-bottom: 0.1em;
+  float: right;
+  clear: both;
+}
+
+.pt-cv-readmore {
+  color: white !important;
+  background-color: #3A6C94 !important;
+  border: none !important;
+  font-size: 18px;
+}
+
+.pt-cv-readmore:hover {
+  background-color: #3A6C94;
+}
+
+.view-essays a.pt-cv-readmore:hover {
+  background-color: #3A6C94 !important;
+}
+
+.view-essays .pt-cv-readmore:after {
+  content: " \00BB";
+}
+
+.chapter-toc li {
+  font-size: 18px;
+}
+
+h2 {
+  display: table;
+  white-space: nowrap;
+  margin: 2em 0;
+}
+
+h2::before, h2::after {
+  border-top: 3px solid #aaa;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 50%;
+}
+
+h2:before {
+  right: 1.5%
+}
+
+h2:after {
+  left: 1.5%;
+}
+
+#front-page-template h2::before, #front-page-template h2::after {
+  border: 0;
+}
+
+#maintitle h2 {
+  display: block;
+  white-space: inherit;
+  margin: inherit;
+  margin-bottom: 0.5em;
+}
+
+h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h5.biography.card-title {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.footer-widget label.assistive-text {
+  visibility: hidden;
+}
+
+.dhs_split_text {
+  font-size: 13pt;
+}
+
+.dhs_split_text .entry-content {
+  padding-top: 0;
+}
+
+#closereading-viewer a.list-group-item.active {
+  background-color: #ddd;
+  color: #000;
+}
+
+#closereading-viewer a.list-group-item:focus {
+  background-color: #e5e5e5;
+  color: #000;
+}
+
+#closereading-viewer .list-group {
+  padding-bottom: 200px;
+}
+
+.closereading-header {
+  border: 1px solid #ccc;
+}
+
+.closereading-content {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  z-index: 1;
+}
+
+.closereading-footer {
+  border: 1px solid #ccc;
+}
+
+.closereading-footer p {
+  margin-bottom: 0;
+}
+
+.closereading-content a.list-group-item {
+  border: none;
+  margin: -0.5rem -1.25rem;
+}
+
+.closereading-content {
+  padding: .5rem 1rem;
+  padding-right: 0;
+  line-height: 175%;
+}
+
+.closereading-content a.list-group-item.active {
+  border: none;
+}
+
+.closereading-content a.list-group-item:hover {
+  background: #f5f5ff;
+}
+
+a.closereading-section {
+  display: block;
+  margin-bottom: 1em;
+}
+
+a.closereading-section:hover, .closereading-active {
+  background: #f5f5ff;
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 1em;
+
+  position: relative;
+  left: -16px;
+  padding-left: 16px;
+  width: calc(100% + 16px);
+}
+
+.closereading-section.closereading-inline {
+  display: inline;
+}
+a.closereading-section.closereading-inline:hover, .closereading-active.closereading-inline {
+  position: relative;
+  left: 0;
+  padding-left:0;
+  width: 100%;
+}
+
+.closereading-highlighted {
+  background: #f5f5ff;
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 1em;
+}
+
+.closereading-active {
+  background: #e4e4ee;
+}
+
+.closereading-header, .closereading-footer {
+  background: #eee;
+  font-size: 80%;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.closereading-header h3, .closereading-header h4 {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.closereading-header h3 {
+  font-size: 12pt;
+  font-weight: bold;
+  display: inline;
+}
+
+.closereading-header h4 {
+  font-size: 10pt;
+  display: inline;
+}
+
+body.dhs_split_text-template-default {
+  margin-top: 70px;
+}
+
+body.dhs_split_text-template-default #wrapper-footer-full {
+  display: none;
+}
+
+body.dhs_split_text-template-default #wrapper-footer {
+  display: none;
+}
+
+h1.closereading-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+h5.closereading-title, .closereading-control-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.closereading-fullscreen {
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+}
+
+.closereading-fullscreen header {
+  margin: 15px 0;
+  text-align: left;
+  line-height: 1;
+}
+
+.closereading-fullscreen .entry-meta {
+  font-size: 14px;
+}
+
+.closereading-fullscreen header label {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.closereading-fullscreen .entry-header::after {
+  border: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.closereading-fullscreen-content {
+  padding-top: 10px;
+}
+
+.closereading-layout-select, #font-select {
+  width: 80px;
+}
+
+#closereading-secondarytext h4 {
+  margin-top: 1.5em;
+}
+#closereading-secondarytext br {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: none;
+}
+
+/* Split-Text Dark Mode -------------------------------------------- */
+
+.closereading-dark .closereading-header {
+  background: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.closereading-dark .closereading-header h3 {
+  color: #fff;
+}
+
+.container-fluid.closereading-dark {
+  background: #111;
+  color: #ddd;
+}
+
+.closereading-dark .closereading-content {
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+}
+
+.closereading-dark a.closereading-section.closereading-active {
+  background: rgb(34, 42, 49);
+}
+.closereading-dark a.closereading-section.closereading-inline.closereading-active {
+  background: rgb(37, 53, 66);
+}
+.closereading-dark a.closereading-section:hover {
+  background: #222;
+}
+.closereading-dark .closereading-highlighted {
+  background: #222;
+}
+.closereading-dark .closereading-footer {
+  background: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+/* End Split-Text Dark Mode ---------------------------------------- */
+
+
+#layout-group, #font-select {
+  display: inline;
+}
+
+.options-layout {
+  text-align: center;
+}
+
+#layout-group {
+  margin-bottom: 0;
+}
+
+#layout-group .active {
+  background: #2196F3;
+}
+
+#layout-group .active .fillbar {
+  border: 1px solid #eee;
+}
+
+#layout-group label {
+  border: 1px solid #ccc;
+}
+
+.fillbar {
+  display: inline-block;
+  width: 40px;
+  border: 1px solid #aaa;
+  background: #999;
+  position: relative;
+}
+
+.fill {
+  display: inline-block;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fill-75 {
+  width: 75%;
+}
+
+.fill-66 {
+  width: 66%;
+}
+
+.fill-58 {
+  width: 58%;
+}
+
+.fill-50 {
+  width: 50%;
+}
+
+.fill-42 {
+  width: 42%;
+}
+
+.fill-33 {
+  width: 33%;
+}
+
+.fill-25 {
+  width: 25%;
+}
+
+.imageframe {
+  border: 1px solid #ddd;
+  padding: 0;
+}
+
+.imageframe-image {
+  margin: 1em;
+}
+
+.imageframe-caption {
+  background: #f5f5f5;
+  font-style: italic;
+  font-size: 85%;
+  padding: 1em;
+}
+
+.ml-post-metadata {
+  background: #f5f5f5;
+  padding: 1em;
+  font-size: 85%;
+}
+
+.news-events img.wp-post-image {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.news-events .entry-content {
+  padding-top: 0;
+}
+
+.news-events .entry-footer {
+  clear: left;
+}
+
+.news-events h2 {
+  margin-bottom: 0.5em;
+}
+
+.news-events .entry-header::after {
+  border: none;
+  content: "";
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.biography-card {
+  margin-bottom: 1.5em;
+}
+
+.biography-content p {
+  font-size: 14pt;
+}
+
+.biography-content .row {
+  border: none;
+  padding-top: 0;
+}
+
+.biography-content .row+.row {
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+}
+
+.new-frequencies-grid .pt-cv-content, .new-frequencies-grid .pt-cv-content * {
+  font-size: 18px;
+}
+
+.page-dark {
+  background: #111;
+  top: -150px;
+  position: relative;
+  padding-top: 150px;
+  color: #ddd;
+  margin-bottom: -150px;
+}
+
+.page-dark h1, .page-dark h2, .page-dark h3 {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+/* Adapted from CSS "Toggle Switch" example, available at: */
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  top: 8px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 20px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.closereading-options {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5em 0.75em 0.1em 0.75em;
+  margin-bottom: -1px;
+  font-size: 18px;
+  margin: 0 1px;
+}
+
+.closereading-options+.closereading-options {
+  margin-bottom: 1em;
+}
+
+.parallax-spacer {
+  display: block;
+  height: 400px;
+}
+
+.tiled-gallery-caption.tiled-gallery-caption {
+  width: auto;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  padding: 10px;
+  text-indent: 0;
+  white-space: normal;
+  text-overflow: initial;
+  /* Optional: persistently visible captions  */
+  display: block !important;
+  /* Optional: white text on black */
+  /*
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	*/
+}
+
+.entry-content a {
+  color: #326891;
+  text-decoration: underline;
+}
+
+a.pt-cv-edit-view, a.pt-cv-edit-post {
+  border: none !important;
+  background: #007bff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  line-height: 100%;
+  line-height: 1;
+  margin: 1em 0;
+  padding: 0.25em 0.5em;
+}
+
+/* PDF --------------------- */
+
+#pdf header::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#pdf h1 {
+  margin-bottom: 0.5em;
+}
+
+#pdf .center p {
+  text-align: center;
+}
+
+#pdf p.media-label {
+  text-align: center;
+}
+
+.preview-pane {
+  display: none;
+}
+
+#pdf-progressbar {
+  display: none;
+}
+
+.progress {
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: .25rem;
+}
+
+.progress-bar {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+}
+
+#lightbox-sortable label.edg-checkbox-container {
+  display: none;
+}
+
+/* ------------------------- */
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.sharedaddy {
+  margin-top: 5em;
+}
+
+blockquote {
+  color: #3A6C94;
+  color: #777;
+  color: #134673;
+  color: #333;
+  margin: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -20px;
+  position: relative;
+  top: -10px;
+}
+
+hr {
+  margin: 2em 0;
+  border-top: 1px solid rgba(0, 0, 0, .25);
+}
+
+.tiled-gallery-caption a {
+  color: black !important;
+  font-weight: bold;
+}
+
+.cursorpointer:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #3A6C94;
+}
+
+/* Post(card)s Grid Items: "En Dehors Garde" from mina-loy.com" -------- */
+
+.edg-grid-item, .biography-grid-item {
+  margin-bottom: 1em;
+}
+
+.edg-grid-item h1, .biography-grid-item h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edg-grid-item article, .biography-grid-item article {
+  background: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.edg-grid-item .entry-header::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.edg-grid-item .entry-content {
+  padding-top: 0;
+  font-size: 18px;
+}
+
+.edg-grid-item .understrap-read-more-link {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.edg-metadata {
+  margin-bottom: 1em;
+}
+
+.edg-metadata-name, .edg-metadata-institution, .edg-metadata-occupation {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+
+.edg-metadata-pdf {
+  margin-bottom: 1em;
+}
+
+.edg-metadata-pdf .edg-metadata-name, .edg-metadata-pdf .edg-metadata-institution, .edg-metadata-pdf .edg-metadata-occupation {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+div.closereadings-metadata {
+  margin-top: 1em;
+}
+div.closereadings-metadata .excerpt {
+  margin-top: 1em;
+  font-size: 80%;
+}
+
+.lightbox-label {
+  font-size: 18px;
+}
+
+  /* Custom Checkboxes: adapted from w3schools "Custom Checkboxes" guide: ---------*/
+  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+  .edg-checkbox-container {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+
+  .edg-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+
+  .edg-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* On mouse-over, add a grey background color */
+
+  .edg-checkbox-container:hover input~.edg-checkbox-checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+
+  .edg-checkbox-container input:checked~.edg-checkbox-checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+
+  .edg-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+
+  .edg-checkbox-container input:checked~.edg-checkbox-checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+
+  .edg-checkbox-container .edg-checkbox-checkmark:after {
+    left: 11px;
+    top: 4px;
+    width: 9px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* --- End Checkbox section ----------------------------------------- */
+
+/* End En Dehors Garde section ---------------------------------------- */
+
+/* Biographies cards -------------------------------------------- */
+
+.category-biography .card-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.biography.card-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.biography.card-text {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.biography p+h5 {
+  margin-top: 2em;
+}
+
+.btn-primary, a.btn-primary {
+  color: #fff;
+  background-color: #3A6C94;
+  border-color: #3A6C94;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-primary:hover, a.btn-primary:hover {
+  color: #fff;
+  background-color: #073961;
+  border-color: #073961;
+}
+
+.btn-primary:active, a.btn-primary:active {
+  color: #fff;
+  background-color: #073961;
+  border-color: #073961;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, a.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #073961;
+  background-color: #051740;
+  border-color: #073961;
+}
+
+.btn-primary:active, a.btn-primary:active {
+  background-color: #051740;
+  box-shadow: none !important;
+}
+
+.btn-primary:focus, a.btn-primary:focus {
+  background-color: #051740;
+  box-shadow: none !important;
+}
+.entry-content a.btn-secondary {
+  color: white;
+  text-decoration: none;
+}
+
+.btn, .wpcf7 input[type=submit] {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: none;
+}
+
+*.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none !important;
+}
+
+.biography-grid .pt-cv-custom-fields {
+  font-size: 16px;
+}
+
+.close-readings-grid .pt-cv-content-item {
+  border: 0;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  padding-top: 1.5em;
+}
+
+.close-readings-grid .pt-cv-content-item:first-child {
+  border-top: none;
+}
+
+.pt-cv-ctf-ml_peer_reviewed {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* -- Override pink/purple shadow on highlighted input forms ------------------- */
+
+.form-control:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input[type=color]:focus, .wpcf7 input[type=date]:focus, .wpcf7 input[type=datetime-local]:focus, .wpcf7 input[type=datetime]:focus, .wpcf7 input[type=email]:focus, .wpcf7 input[type=file]:focus, .wpcf7 input[type=month]:focus, .wpcf7 input[type=number]:focus, .wpcf7 input[type=range]:focus, .wpcf7 input[type=search]:focus, .wpcf7 input[type=submit]:focus, .wpcf7 input[type=tel]:focus, .wpcf7 input[type=text]:focus, .wpcf7 input[type=time]:focus, .wpcf7 input[type=url]:focus, .wpcf7 input[type=week]:focus, .wpcf7 select:focus, .wpcf7 textarea:focus {
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+.form-control, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea {
+  line-height: 1;
+}
+
+.search-menu a svg {
+  vertical-align: middle;
+  fill: #666;
+}
+
+
+/* Custom full-screen styles ----------------------------------------------------- */
+
+:-webkit-full-screen .fs {
+  display: none
+}
+
+:-moz-full-screen .fs {
+  display: none
+}
+
+:-webkit-full-screen .rs {
+  display: block
+}
+
+:-moz-full-screen .rs {
+  display: block
+}
+
+@media (max-width: 768px) {
+  .closereading-options .col-md-5 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+  }
+  .closereading-options .col-md-5:last-child {
+    border-bottom: none;
+    margin-bottom: none;
+  }
+  .fillbar {
+    width: 30px;
+  }
+  a.navbar-brand {
+    text-indent: -9999em;
+    margin: 10px;
+    margin-top: 0;
+  }
+  button.navbar-toggler {
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  .btn-primary {
+    background-color: #3A6C94;
+    border-color: #3A6C94;
+  }
+  #searchsubmit {
+    margin-left: 0.5em;
+  }
+  h2 {
+    white-space: normal;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .fillbar {
+    width: 20px;
+  }
+}
+
+@media (max-width: 452px) {
+  body {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+  a.navbar-brand {
+    /* Custom Logo, narrow width - if needed */
+    background: url('../images/dhs-logo-medium.png') no-repeat !important;
+    width: 140px;
+  }
+  .fillbar {
+    width: 30px;
+  }
+  .navbar-title li, .navbar-footer li {
+    margin-left: 5px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 60px;
+    top: 0;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked+.slider:before {
+    -webkit-transform: translateY(-26px);
+    -ms-transform: translateY(-26px);
+    transform: translateY(-26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+  }
+  .slider.round:before {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+  a.navbar-brand {
+    /* Custom Logo, narrow width - if needed */
+    background: url('../images/dhs-logo-medium.png') no-repeat !important;
+    width: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .closereading-options .col-md-5 {
+    border-right: 1px solid #ccc;
+  }
+  .closereading-options .col-md-5:last-child {
+    border-right: none;
+  }
+  .fillbar {
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    border: 1px solid #aaa;
+    background: #999;
+    position: relative;
+    top: 4px;
+  }
+}
+
+/* end of custom css */
+
+/* Pricing Table
+--------------------------------------------- */
+
+.pricing-table {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.pricing-table h4 {
+  border-bottom: 2px solid #000;
+  color: #000;
+  margin: -40px -40px 40px;
+  padding: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.pricing-table .one-third {
+  background-color: #fff;
+  border: 2px solid #000;
+  margin: 20px -2px;
+  padding: 40px;
+  padding-bottom: 0px;
+  width: 33.33%;
+}
+
+.pricing-table .one-third:nth-child(3n+1) {
+  margin: 20px 0;
+  left: 2px;
+}
+
+.pricing-table .one-third:nth-child(3n+2) {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pricing-table .one-third:nth-child(3n) {
+  margin: 20px 0;
+  left: -2px;
+}
+
+.pricing-table ul li {
+  border-bottom: 1px dotted #ddd;
+  color: #000;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.pricing-table ul {
+  padding: 0;
+  margin-top: 2em;
+}
+
+.pricing-table a.button {
+  background-color: #000;
+  background-color: #333;
+  border: 3px solid #000;
+  border: 3px solid #333;
+  color: #fff;
+  clear: both;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pricing-table a {
+  text-decoration: none;
+}
+
+.pricing-table a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+.pricing-table a.button:hover {
+  background-color: #3A6C94;
+  border: 3px solid #3A6C94;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.slideshow-window {
+  background-color: #fff !important;
+  border: #fff !important;
+}
+
+.pt-cv-thumb-default img {
+  width: 240px;
+  height: 240px;
+}
+
+.pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-ml_peer_reviewed {
+  background: #777;
+  background: #5f7a90;
+  font-size: 12pt;
+  padding: 0.5em;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 5px;
+  padding-bottom: 0.4em;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Peer Review Badges ----------------------------------------------------------- */
+
+  /* Disables Peer Review Badges/Buttons */
+  /* To disable them on the site, uncomment these next two selectors: */
+
+  /* .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-ml_peer_reviewed {
+    display: none;
+  }
+
+  .peer-review-button {
+    display: none;
+  } */
+
+/* ----- End disabling Peer Review Badges/Buttons */
+
+.pt-cv-ifield {
+  overflow: visible;
+}
+
+.pt-cv-meta-fields span, .pt-cv-meta-fields time {
+  color: #333;
+  float: none;
+}
+
+.ml-tableofcontents .pt-cv-ctf-list {
+  display: inline-block;
+}
+
+figure.wp-caption {
+  margin-bottom: 1em;
+}
+
+figcaption.wp-caption-text {
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+}

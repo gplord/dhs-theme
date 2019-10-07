@@ -1,0 +1,1647 @@
+[
+    {
+        "key": "group_5c6319cca388f",
+        "title": "Biography",
+        "fields": [
+            {
+                "key": "field_5b3af42929417",
+                "label": "Full Name",
+                "name": "biography_name",
+                "type": "text",
+                "instructions": "(Display name) The name of the subject of this biography",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c631bc5bbe94",
+                "label": "Last Name",
+                "name": "biography_lastname",
+                "type": "text",
+                "instructions": "The last name of the subject of this biography, for alphabetical order in display",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3af40f29416",
+                "label": "Biography Author",
+                "name": "biography_author",
+                "type": "text",
+                "instructions": "The name of the person writing this biography",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aeebf92287",
+                "label": "Date of Birth",
+                "name": "date_of_birth",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aeef392288",
+                "label": "Place of Birth",
+                "name": "place_of_birth",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aef4792289",
+                "label": "Date of Death",
+                "name": "date_of_death",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aef599228a",
+                "label": "Place of Death",
+                "name": "place_of_death",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aef6c9228b",
+                "label": "Country of Origin\/Citizenship",
+                "name": "country_of_origin_citizenship",
+                "type": "text",
+                "instructions": "Ex. \"United States\/American\"",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3aefbf9228e",
+                "label": "Kind of Artist\/Cultural Worker",
+                "name": "kind_of_artist_cultural_worker",
+                "type": "text",
+                "instructions": "Ex. \"Painter\"",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3af00f92290",
+                "label": "Date & Places of Overlap with Loy",
+                "name": "date_places_of_overlap_with_loy",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 2,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5b3af03892291",
+                "label": "Avant-Garde Movements the Figure Was Associated With",
+                "name": "avantgarde_movements_the_figure_was_associated_with",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3af4c30f75c",
+                "label": "Works Cited",
+                "name": "works_cited",
+                "type": "wysiwyg",
+                "instructions": "To increase the size of this field, drag this text area from the lower-right corner.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:biography"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c79740a4909d",
+        "title": "Collection Metadata",
+        "fields": [
+            {
+                "key": "field_5c79740a58f54",
+                "label": "Collection Title",
+                "name": "ml_collection_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c79740a4d52d",
+                "label": "Authors",
+                "name": "ml_authors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5c79740a4ee77",
+                        "label": "Author",
+                        "name": "ml_author",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c79740a51114",
+                "label": "Editors",
+                "name": "ml_editors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5c79740a5205b",
+                        "label": "Editor",
+                        "name": "ml_editor",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c79740a53d11",
+                "label": "Creators",
+                "name": "ml_creators",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5c79740a54ddd",
+                        "label": "Creator",
+                        "name": "ml_creator",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c79740a5a662",
+                "label": "Date",
+                "name": "ml_date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5c79740a5bc1e",
+                "label": "Genres",
+                "name": "ml_genres",
+                "type": "repeater",
+                "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Genre",
+                "sub_fields": [
+                    {
+                        "key": "field_5c79740a5d36d",
+                        "label": "Genre",
+                        "name": "ml_genre",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "advertisement": "Advertisement",
+                            "animation": "Animation",
+                            "bibliography": "Bibliography",
+                            "catalog": "Catalog",
+                            "chronology": "Chronology",
+                            "citation": "Citation",
+                            "collection": "Collection",
+                            "correspondence": "Correspondence",
+                            "criticism": "Criticism",
+                            "drama": "Drama",
+                            "ephemera": "Ephemera",
+                            "essay": "Essay",
+                            "fiction": "Fiction",
+                            "filmdocumentary": "Film, Documentary",
+                            "filmexperimental": "Film, Experimental",
+                            "filmnarrative": "Film, Narrative",
+                            "filmother": "Film, Other",
+                            "historiography": "Historiography",
+                            "interview": "Interview",
+                            "lifewriting": "Life Writing",
+                            "liturgy": "Liturgy",
+                            "musicalanalysis": "Musical Analysis",
+                            "musicother": "Music, Other",
+                            "musicalwork": "Musical Work",
+                            "musicalscore": "Musical Score",
+                            "nonfiction": "Nonfiction",
+                            "paratext": "Paratext",
+                            "performance": "Performance",
+                            "philosophy": "Philosophy",
+                            "photograph": "Photograph",
+                            "politicalstatement": "Political Statement",
+                            "poetry": "Poetry",
+                            "religion": "Religion",
+                            "referenceworks": "Reference Works",
+                            "review": "Review",
+                            "scripture": "Scripture",
+                            "sermon": "Sermon",
+                            "speech": "Speech",
+                            "translation": "Translation",
+                            "travelwriting": "Travel Writing",
+                            "unspecified": "Unspecified",
+                            "visualart": "Visual Art"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c79740a5fd44",
+                "label": "Disciplines",
+                "name": "ml_disciplines",
+                "type": "repeater",
+                "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Discipline",
+                "sub_fields": [
+                    {
+                        "key": "field_5c79740a60dbd",
+                        "label": "Discipline",
+                        "name": "ml_discipline",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "anthropology": "Anthropology",
+                            "archaeology": "Archaeology",
+                            "architecture": "Architecture",
+                            "arthistory": "Art History",
+                            "artstudies": "Art Studies",
+                            "bookhistory": "Book History",
+                            "classics": "Classics, Ancient History",
+                            "dancestudies": "Dance Studies",
+                            "economics": "Economics",
+                            "education": "Education",
+                            "ethnicstudies": "Ethnic Studies",
+                            "filmstudies": "Film Studies",
+                            "genderstudies": "Gender Studies",
+                            "geography": "Geography",
+                            "history": "History",
+                            "laborstudies": "Labor Studies",
+                            "law": "Law",
+                            "literature": "Literature",
+                            "manuscriptstudies": "Manuscript Studies",
+                            "math": "Math",
+                            "musicstudies": "Music Studies",
+                            "philosophy": "Philosophy",
+                            "politicalscience": "Political Science",
+                            "religiousstudies": "Religious Studies",
+                            "science": "Science",
+                            "sociology": "Sociology",
+                            "soundstudies": "Sound Studies",
+                            "theaterstudies": "Theater Studies"
+                        },
+                        "default_value": [],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c889a9ca4495",
+                "label": "Collex Text",
+                "name": "ml_collex_text",
+                "type": "textarea",
+                "instructions": "Text to be displayed in the <collex:text> field, as a description of the entire collection.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/collectionpage.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/artifactcollectionpage.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccc2a2b",
+        "title": "Flash Mob Metadata",
+        "fields": [
+            {
+                "key": "field_5b31c2ef86c68",
+                "label": "Media Type",
+                "name": "media_type",
+                "type": "select",
+                "instructions": "The type of media this contribution contains",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "text": "Text\/Image",
+                    "image": "Image",
+                    "video": "Video",
+                    "audio": "Audio",
+                    "interactive": "Interactive Media"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b31bd58fb15f",
+                "label": "Use Real Name",
+                "name": "use_real_name",
+                "type": "true_false",
+                "instructions": "Whether or not this contributor wishes to use a real name",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5b31bc46fb15c",
+                "label": "First Name",
+                "name": "first_name",
+                "type": "text",
+                "instructions": "(Optional)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b31bd58fb15f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b31bca0fb15d",
+                "label": "Last Name",
+                "name": "last_name",
+                "type": "text",
+                "instructions": "(Optional)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b31bd58fb15f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b31bd09fb15e",
+                "label": "Preferred Name",
+                "name": "preferred_name",
+                "type": "text",
+                "instructions": "(Optional) Use this field if a user wishes to use a pseudonym instead of a name.  This field will not be shown publicly if a real name is provided.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b31bd58fb15f",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "anonymous",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b31be7cfb160",
+                "label": "Email Address",
+                "name": "email_address",
+                "type": "text",
+                "instructions": "Contributor's email address.  Leave blank if the contributor does not wish to share their email address publicly.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b31bf44fb161",
+                "label": "Institutional Affiliation",
+                "name": "institutional_affiliation",
+                "type": "text",
+                "instructions": "(Optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b31bf64fb162",
+                "label": "Occupation",
+                "name": "occupation",
+                "type": "text",
+                "instructions": "(Optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b8010e086341",
+                "label": "Additional Authors",
+                "name": "additional_authors",
+                "type": "text",
+                "instructions": "List any additional authors by their full names. (These names will be displayed publicly with this post, if included here.)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b3319d977db4",
+                "label": "Media URL",
+                "name": "media_url",
+                "type": "text",
+                "instructions": "Plaintext hyperlink (not an embed code) to the web player for this content.  (YouTube, SoundCloud, etc.)  Please note: This will not add the video to the post below!  This will be shown only in the PDF print view.  Videos\/Audio\/etc must still be added to the post, via embed codes.  See site documentation for instructions.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b31c2ef86c68",
+                            "operator": "==",
+                            "value": "video"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_5b31c2ef86c68",
+                            "operator": "==",
+                            "value": "audio"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_5b31c2ef86c68",
+                            "operator": "==",
+                            "value": "interactive"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "41"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c62708081574",
+        "title": "Metadata",
+        "fields": [
+            {
+                "key": "field_5c62710366737",
+                "label": "Collection Title",
+                "name": "ml_collection_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c6270ef66735",
+                "label": "Chapter Title",
+                "name": "ml_chapter_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c62709e5b91c",
+                "label": "Authors",
+                "name": "ml_authors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Author",
+                "sub_fields": [
+                    {
+                        "key": "field_5c6270b35b91d",
+                        "label": "Author",
+                        "name": "ml_author",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c6270d966733",
+                "label": "Editors",
+                "name": "ml_editors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Editor",
+                "sub_fields": [
+                    {
+                        "key": "field_5c6270e766734",
+                        "label": "Editor",
+                        "name": "ml_editor",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c794c2f1d144",
+                "label": "Creators",
+                "name": "ml_creators",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Creator",
+                "sub_fields": [
+                    {
+                        "key": "field_5c794c411d145",
+                        "label": "Creator",
+                        "name": "ml_creator",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c62710b66738",
+                "label": "Date",
+                "name": "ml_date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5c62712566739",
+                "label": "Genres",
+                "name": "ml_genres",
+                "type": "repeater",
+                "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Genre",
+                "sub_fields": [
+                    {
+                        "key": "field_5c6329ca2aa42",
+                        "label": "Genre",
+                        "name": "ml_genre",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "advertisement": "Advertisement",
+                            "animation": "Animation",
+                            "bibliography": "Bibliography",
+                            "catalog": "Catalog",
+                            "chronology": "Chronology",
+                            "citation": "Citation",
+                            "collection": "Collection",
+                            "correspondence": "Correspondence",
+                            "criticism": "Criticism",
+                            "drama": "Drama",
+                            "ephemera": "Ephemera",
+                            "essay": "Essay",
+                            "fiction": "Fiction",
+                            "filmdocumentary": "Film, Documentary",
+                            "filmexperimental": "Film, Experimental",
+                            "filmnarrative": "Film, Narrative",
+                            "filmother": "Film, Other",
+                            "historiography": "Historiography",
+                            "interview": "Interview",
+                            "lifewriting": "Life Writing",
+                            "liturgy": "Liturgy",
+                            "musicalanalysis": "Musical Analysis",
+                            "musicother": "Music, Other",
+                            "musicalwork": "Musical Work",
+                            "musicalscore": "Musical Score",
+                            "nonfiction": "Nonfiction",
+                            "paratext": "Paratext",
+                            "performance": "Performance",
+                            "philosophy": "Philosophy",
+                            "photograph": "Photograph",
+                            "politicalstatement": "Political Statement",
+                            "poetry": "Poetry",
+                            "religion": "Religion",
+                            "referenceworks": "Reference Works",
+                            "review": "Review",
+                            "scripture": "Scripture",
+                            "sermon": "Sermon",
+                            "speech": "Speech",
+                            "translation": "Translation",
+                            "travelwriting": "Travel Writing",
+                            "unspecified": "Unspecified",
+                            "visualart": "Visual Art"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c794cc5f6abe",
+                "label": "Disciplines",
+                "name": "ml_disciplines",
+                "type": "repeater",
+                "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Discipline",
+                "sub_fields": [
+                    {
+                        "key": "field_5c794ce7f6abf",
+                        "label": "Discipline",
+                        "name": "ml_discipline",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "anthropology": "Anthropology",
+                            "archaeology": "Archaeology",
+                            "architecture": "Architecture",
+                            "arthistory": "Art History",
+                            "artstudies": "Art Studies",
+                            "bookhistory": "Book History",
+                            "classics": "Classics, Ancient History",
+                            "dancestudies": "Dance Studies",
+                            "economics": "Economics",
+                            "education": "Education",
+                            "ethnicstudies": "Ethnic Studies",
+                            "filmstudies": "Film Studies",
+                            "genderstudies": "Gender Studies",
+                            "geography": "Geography",
+                            "history": "History",
+                            "laborstudies": "Labor Studies",
+                            "law": "Law",
+                            "literature": "Literature",
+                            "manuscriptstudies": "Manuscript Studies",
+                            "math": "Math",
+                            "musicstudies": "Music Studies",
+                            "philosophy": "Philosophy",
+                            "politicalscience": "Political Science",
+                            "religiousstudies": "Religious Studies",
+                            "science": "Science",
+                            "sociology": "Sociology",
+                            "soundstudies": "Sound Studies",
+                            "theaterstudies": "Theater Studies"
+                        },
+                        "default_value": [],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5c6da3fb25b05",
+                "label": "Peer Reviewed",
+                "name": "ml_peer_reviewed",
+                "type": "checkbox",
+                "instructions": "Whether this chapter or collection has been peer reviewed",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Peer Reviewed"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_5c7d45c948584",
+                "label": "Peer Review Date",
+                "name": "ml_reviewdate",
+                "type": "date_picker",
+                "instructions": "The date of most recent peer review",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5c6da3fb25b05",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/essaytitlepage.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/artifactpage.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccd6d4c",
+        "title": "Peer Review Page",
+        "fields": [
+            {
+                "key": "field_5b3b207674b29",
+                "label": "Peer Reviewed",
+                "name": "peer_reviewed_page",
+                "type": "checkbox",
+                "instructions": "Has this essay or essay section (Page) been peer reviewed?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Peer Reviewed"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/essaypage.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": false,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccdb679",
+        "title": "Peer Review Post",
+        "fields": [
+            {
+                "key": "field_5b33485b9168a",
+                "label": "Peer Reviewed",
+                "name": "peer_reviewed_post",
+                "type": "checkbox",
+                "instructions": "Check this box if this post should be labeled with a \"Peer Reviewed\" seal.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Peer Reviewed"
+                },
+                "default_value": [],
+                "layout": "horizontal",
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "42"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccdf9cd",
+        "title": "Primary Text",
+        "fields": [
+            {
+                "key": "field_5a5c2aadf2f81",
+                "label": "Primary Text Title",
+                "name": "primary_text_title",
+                "type": "text",
+                "instructions": "Title of the Primary Text",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2b16f2f82",
+                "label": "Primary Text Author",
+                "name": "primary_text_author",
+                "type": "text",
+                "instructions": "Name of the Primary Text author(s)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2dc5f2f83",
+                "label": "Primary Text Link",
+                "name": "primary_text_link",
+                "type": "wysiwyg",
+                "instructions": "Link to this text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            },
+            {
+                "key": "field_5a5c2df9f2f84",
+                "label": "Primary Text Citation",
+                "name": "primary_text_citation",
+                "type": "textarea",
+                "instructions": "Citation format for Primary Text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5a5c2e22f2f85",
+                "label": "Primary Text Content",
+                "name": "primary_text_content",
+                "type": "wysiwyg",
+                "instructions": "Write or paste the Primary Text itself here.  (This will appear in the main text area, to the left, or above if viewed on a smaller screen.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "minaloy_split_text"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccec12f",
+        "title": "Secondary Text",
+        "fields": [
+            {
+                "key": "field_5a5c2ed5585b0",
+                "label": "Close Reading Title",
+                "name": "secondary_text_title",
+                "type": "text",
+                "instructions": "Title of the Secondary Text",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2f05585b1",
+                "label": "Close Reading Author",
+                "name": "secondary_text_author",
+                "type": "text",
+                "instructions": "Name of the Secondary Text author(s)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2f40585b2",
+                "label": "Secondary Text Link",
+                "name": "secondary_text_link",
+                "type": "wysiwyg",
+                "instructions": "Link to this text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            },
+            {
+                "key": "field_5a5c2f5a585b3",
+                "label": "Secondary Text Citation",
+                "name": "secondary_text_citation",
+                "type": "textarea",
+                "instructions": "Citation format for Secondary Text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5a5c2f7a585b4",
+                "label": "Secondary Text Content",
+                "name": "secondary_text_content",
+                "type": "wysiwyg",
+                "instructions": "Write or paste the Secondary Text itself here.  (This will appear in the secondary text area, to the right, or below if viewed on a smaller screen.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "minaloy_split_text"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

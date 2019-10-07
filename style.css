@@ -1,0 +1,708 @@
+/*
+ Theme Name:   Digital Humanities Scholarship
+ Theme URI:    http://www.gplord.com
+ Description:  DHS - Understrap Child Theme (Originally built for mina-loy.com)
+ Author:       Gregory Lord
+ Author URI:   http://www.gplord.com
+ Template:     understrap
+ Version:      0.1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  dhs
+*/
+
+/* CUSTOMIZE: Replace the styles below with your site-wide CSS styles */
+/* Example: See below for all original values for all site design elements from mina-loy.com */
+/* NOTE: Many styles are defined, or overriden, by dhs.css in the dhs-theme/css/ directory   */
+
+/* DHS Site Styles ------------------------------------------------------------------------- */
+
+.testclass {
+  border: 2px solid red;
+  background: lime;
+  box-shadow: inset 0 2px 5px purple;
+}
+
+a.navbar-brand {
+  background-size: contain !important;
+  display: block;
+  height: 70px;
+  width: 360px;
+  color: transparent;
+}
+
+a.navbar-brand:focus, a.navbar-brand:hover {
+  color: transparent;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-brand {
+  color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+#front-page-template .nk-awb {
+  height: 500px;
+  padding-top: 150px;
+}
+
+#front-page-template h1, #front-page-template h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#front-page-template h1 {
+  font-size: 72px;
+  margin-bottom: 0.5em;
+}
+
+#front-page-template h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  padding-top: 0;
+}
+
+.container {
+  padding-top: 0;
+}
+
+.nk-awb p {
+  display: none;
+}
+
+.navbar-title {
+  background-color: white !important;
+  padding: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-title .menu-item a, .navbar-footer .menu-item a {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-title .dropdown-toggle::after, .navbar-footer .dropdown-toggle::after {
+  /*display: none;*/
+}
+
+.navbar-title li, .navbar-footer li {
+  margin-left: 1em;
+}
+
+.navbar-title li ul li, .navbar-footer li ul li {
+  margin-left: 0;
+}
+
+.navbar-title li.nav-item:hover, .navbar-footer li.nav-item:hover {
+  background: #eee;
+}
+
+.navbar li a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a.navbar-brand {
+  text-indent: -9999em;
+}
+
+#parallax-front-dark {
+  height: 400px;
+}
+
+.admin-bar .fixed-top {
+  margin-top: 32px !important;
+}
+
+body {
+  /* margin-top: 70px; */
+  margin-top: 150px;
+}
+
+main.site-main article {
+  /* margin-top: 150px;      Main page layout margin above text content */
+}
+
+main.site-main #front-page-template article {
+  margin-top: -80px;
+  /* Front page layout margin, customized for parallax background area */
+}
+
+#front-page-template {
+  text-align: center;
+}
+
+#front-page-template p.lead {
+  margin-top: 5em;
+}
+
+p.lead {
+  font-size: 24px;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Sorts Mill Goudy', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.entry-header::after {
+  border-bottom: 1px solid #000;
+  content: "";
+  display: block;
+  margin: 0 auto 60px;
+  padding-bottom: 30px;
+  width: 25%;
+}
+
+.pt-cv-wrapper {
+  background: #ddd;
+  padding: 1em;
+}
+
+.view-essays {}
+
+.view-essays .pt-cv-content-item {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.view-essays .pt-cv-content-item:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.view-essays .pt-cv-readmore {
+  display: block;
+  text-align: right;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  padding-bottom: 0.1em;
+  float: right;
+  clear: both;
+}
+
+.pt-cv-readmore {
+  color: white !important;
+  background-color: #3A6C94 !important;
+  border: none !important;
+  font-size: 18px;
+}
+
+.pt-cv-readmore:hover {
+  background-color: #3A6C94;
+}
+
+.view-essays a.pt-cv-readmore:hover {
+  background-color: #3A6C94 !important;
+}
+
+.view-essays .pt-cv-readmore:after {
+  content: " \00BB";
+}
+
+h2 {
+  display: table;
+  white-space: nowrap;
+  margin: 2em 0;
+}
+
+h2::before, h2::after {
+  border-top: 1px solid #aaa;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+
+h2:before {
+  right: 1.5%
+}
+
+h2:after {
+  left: 1.5%;
+}
+
+#front-page-template h2::before, #front-page-template h2::after {
+  border: 0;
+}
+
+#maintitle h2 {
+  display: block;
+  white-space: inherit;
+  margin: inherit;
+  margin-bottom: 0.5em;
+}
+
+.footer-widget label.assistive-text {
+  visibility: hidden;
+}
+
+a.pt-cv-edit-view, a.pt-cv-edit-post {
+  border: none !important;
+  background: #007bff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  line-height: 100%;
+  line-height: 1;
+  margin: 1em 0;
+  padding: 0.25em 0.5em;
+}
+
+.dhs_split_text {
+  font-size: 18px;
+}
+
+#split-text-viewer a.list-group-item.active {
+  background-color: #ddd;
+  color: #000;
+}
+
+#split-text-viewer a.list-group-item:focus {
+  background-color: #e5e5e5;
+  color: #000;
+}
+
+#split-text-viewer .list-group {
+  padding-bottom: 200px;
+}
+
+.split-text-header {
+  border: 1px solid #ccc;
+}
+
+.split-text-content {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  z-index: 1;
+}
+
+.split-text-footer {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.split-text-content a.list-group-item {
+  min-height: 250px;
+}
+
+.split-text-content a.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none;
+  border-bottom: none;
+}
+
+.split-text-content a.list-group-item.active {
+  border: none;
+}
+
+.split-text-content a.list-group-item:hover {
+  background: #f5f5ff;
+}
+
+.split-text-content .list-group a.list-group-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.split-text-content .list-group a.list-group-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.split-text-header, .split-text-footer {
+  background: #eee;
+  font-size: 80%;
+  padding: 1em;
+  padding-bottom: 0.1em;
+}
+
+.split-text-header h3, .split-text-header h4 {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.split-text-header h3 {
+  font-family: 'Montserat', sans-serif;
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+.split-text-header h4 {
+  font-size: 12pt;
+}
+
+/* Adapted from CSS "Toggle Switch" example, available at: */
+
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.split-text-options {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5em 0.75em 0.1em 0.75em;
+  margin-bottom: -1px;
+  font-size: 18px;
+  margin: 0 1px;
+}
+
+.split-text-options+.split-text-options {
+  margin-bottom: 1em;
+}
+
+.options-layout {
+  text-align: center;
+}
+
+#layout-group {
+  margin-bottom: 20px;
+}
+
+#layout-group .active {
+  background: #2196F3;
+}
+
+#layout-group .active .fillbar {
+  border: 1px solid #eee;
+}
+
+#layout-group label {
+  border: 1px solid #ccc;
+}
+
+.fillbar {
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+  border: 1px solid #aaa;
+  background: #999;
+  position: relative;
+  top: 5px;
+  padding: 10px 0;
+}
+
+.fill {
+  display: inline-block;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fill-75 {
+  width: 75%;
+}
+
+.fill-66 {
+  width: 66%;
+}
+
+.fill-58 {
+  width: 58%;
+}
+
+.fill-50 {
+  width: 50%;
+}
+
+.fill-42 {
+  width: 42%;
+}
+
+.fill-33 {
+  width: 33%;
+}
+
+.fill-25 {
+  width: 25%;
+}
+
+.parallax-spacer {
+  display: block;
+  height: 400px;
+}
+
+.tiled-gallery-caption.tiled-gallery-caption {
+  width: auto;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  padding: 10px;
+  text-indent: 0;
+  white-space: normal;
+  text-overflow: initial;
+  /* Optional: persistently visible captions  */
+  display: block !important;
+  /* Optional: white text on black */
+  /*
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	*/
+}
+
+.entry-content {
+  padding-top: 2em;
+}
+
+.entry-content>.nk-awb:first-child {
+  margin-top: -2em;
+  margin-bottom: 2em;
+}
+
+div.sharedaddy {
+  margin-top: 5em;
+}
+
+blockquote {
+  color: #3A6C94;
+  margin: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -20px;
+  position: relative;
+  top: -10px;
+}
+
+hr {
+  margin: 2em 0;
+  border-top: 1px solid rgba(0, 0, 0, .25);
+}
+
+.tiled-gallery-caption a {
+  color: black !important;
+  font-weight: bold;
+}
+
+.cursorpointer:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #3A6C94;
+}
+
+body {
+  background: lime;
+}
+
+@media (max-width: 768px) {
+  .split-text-options .col-md-5 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+  }
+  .split-text-options .col-md-5:last-child {
+    border-bottom: none;
+    margin-bottom: none;
+  }
+  .fillbar {
+    width: 30px;
+  }
+  a.navbar-brand {
+    text-indent: -9999em;
+    margin: 10px;
+    margin-top: 0;
+  }
+  button.navbar-toggler {
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  .btn-primary {
+    background-color: #3A6C94;
+    border-color: #3A6C94;
+  }
+  #searchsubmit {
+    margin-left: 0.5em;
+  }
+  h2 {
+    white-space: normal;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .fillbar {
+    width: 20px;
+  }
+}
+
+@media (max-width: 452px) {
+  body {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+  a.navbar-brand {
+    width: 140px;
+  }
+  .fillbar {
+    width: 30px;
+  }
+  .navbar-title li, .navbar-footer li {
+    margin-left: 5px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 60px;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked+.slider:before {
+    -webkit-transform: translateY(-26px);
+    -ms-transform: translateY(-26px);
+    transform: translateY(-26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+  }
+  .slider.round:before {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 768px) {
+  .split-text-options .col-md-5 {
+    border-right: 1px solid #ccc;
+  }
+  .split-text-options .col-md-5:last-child {
+    border-right: none;
+  }
+  .fillbar {
+    display: inline-block;
+    width: 50px;
+    height: 15px;
+    border: 1px solid #aaa;
+    background: #999;
+    position: relative;
+    top: 5px;
+  }
+}
+
+/* end of custom css */
