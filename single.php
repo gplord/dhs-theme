@@ -27,7 +27,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							if(has_category('endehorsgarde')){
 								get_template_part('loop-templates/content','singleendehorsgarde');
 							} else if (has_category('biography')) {
-								get_template_part( 'loop-templates/content', 'biographygrid' );
+								get_template_part( 'loop-templates/content', 'biography' );
 							}else {
 								get_template_part( 'loop-templates/content', 'single' );
 							}

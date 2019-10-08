@@ -302,11 +302,11 @@ h5.biography.card-title {
   visibility: hidden;
 }
 
-.dhs_split_text {
+.dhs_closereading {
   font-size: 13pt;
 }
 
-.dhs_split_text .entry-content {
+.dhs_closereading .entry-content {
   padding-top: 0;
 }
 
@@ -366,22 +366,22 @@ a.closereading-section {
   margin-bottom: 1em;
 }
 
-a.closereading-section:hover, .closereading-active {
+a.closereading-section:hover, .closereading-active, .closereading-highlighted {
   background: #f5f5ff;
   margin-right: 0;
   padding-right: 0;
   margin-bottom: 1em;
 
   position: relative;
-  left: -16px;
-  padding-left: 16px;
-  width: calc(100% + 16px);
+  left: -15px;
+  padding-left: 15px;
+  width: calc(100% + 14px);
 }
 
 .closereading-section.closereading-inline {
   display: inline;
 }
-a.closereading-section.closereading-inline:hover, .closereading-active.closereading-inline {
+a.closereading-section.closereading-inline:hover, .closereading-active.closereading-inline, .closereading-highlighted.closereading-inline {
   position: relative;
   left: 0;
   padding-left:0;
@@ -421,15 +421,19 @@ a.closereading-section.closereading-inline:hover, .closereading-active.closeread
   display: inline;
 }
 
-body.dhs_split_text-template-default {
+.closereadings-list-text {
+  padding-left: 1.25em;
+}
+
+body.dhs_closereading-template-default {
   margin-top: 70px;
 }
 
-body.dhs_split_text-template-default #wrapper-footer-full {
+body.dhs_closereading-template-default #wrapper-footer-full {
   display: none;
 }
 
-body.dhs_split_text-template-default #wrapper-footer {
+body.dhs_closereading-template-default #wrapper-footer {
   display: none;
 }
 
@@ -491,7 +495,7 @@ h5.closereading-title, .closereading-control-label {
   display: none;
 }
 
-/* Split-Text Dark Mode -------------------------------------------- */
+/* Close Reading Dark Mode -------------------------------------------- */
 
 .closereading-dark .closereading-header {
   background: #222;
@@ -501,6 +505,9 @@ h5.closereading-title, .closereading-control-label {
 
 .closereading-dark .closereading-header h3 {
   color: #fff;
+}
+.closereading-dark blockquote {
+  color: #aaa;
 }
 
 .container-fluid.closereading-dark {
@@ -531,7 +538,7 @@ h5.closereading-title, .closereading-control-label {
   border: 1px solid #444;
 }
 
-/* End Split-Text Dark Mode ---------------------------------------- */
+/* Close Reading Text Dark Mode ---------------------------------------- */
 
 
 #layout-group, #font-select {

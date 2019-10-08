@@ -11,7 +11,7 @@
 
 get_header();
 
-// To Do: dhs_split_text -- Rename this to archive-closereadings when dhs_split_text matches
+// To Do: dhs_closereading -- Rename this to archive-closereadings when dhs_closereading matches
 
 ?>
 
@@ -29,28 +29,12 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
-				
-				<?php 
-					/*$query = new WP_Query( array( 
-						'post_type' => 'dhs_split_text',
-						'category_name' => 'closereadings',
-						'orderby' => 'rand'
-					) ); */
-				?>
 
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
 						<h1 class="page-title">Close Readings</h1>
-						<?php
-						//the_archive_title( '<h1 class="page-title">', '</h1>' );
-						//the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
 					</header><!-- .page-header -->				
-					
-
-					<?php /* Start the Loop */ ?>					
-					<?php //$query = new WP_Query( array( 'post_type' => 'post', 'post__in' => array( 2708, 2706, 2704 ) ) ); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 

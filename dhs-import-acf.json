@@ -249,7 +249,235 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccdf9cd",
+        "title": "Close Readings Left Text",
+        "fields": [
+            {
+                "key": "field_5a5c2aadf2f81",
+                "label": "Left Text Title",
+                "name": "cr_left_text_title",
+                "type": "text",
+                "instructions": "Title of the left-side text",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2b16f2f82",
+                "label": "Left Text Author",
+                "name": "cr_left_text_author",
+                "type": "text",
+                "instructions": "Name of the left-side text author(s)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2dc5f2f83",
+                "label": "Left Text Link",
+                "name": "cr_left_text_link",
+                "type": "link",
+                "instructions": "Link to the left-side text, if available online.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_5a5c2df9f2f84",
+                "label": "Left Text Citation",
+                "name": "cr_left_text_citation",
+                "type": "textarea",
+                "instructions": "Citation for the left-side text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5a5c2e22f2f85",
+                "label": "Left Text Content",
+                "name": "cr_left_text_content",
+                "type": "wysiwyg",
+                "instructions": "Write or paste the left-side text itself here.  (This will appear in the main text area, to the left, or above if viewed on a smaller screen.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "dhs_closereading"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5c6319ccec12f",
+        "title": "Close Readings Right Text",
+        "fields": [
+            {
+                "key": "field_5a5c2ed5585b0",
+                "label": "Right Text Title",
+                "name": "cr_right_text_title",
+                "type": "text",
+                "instructions": "Title of the right-hand text",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2f05585b1",
+                "label": "Right Text Author",
+                "name": "cr_right_text_author",
+                "type": "text",
+                "instructions": "Name of the right-side text author(s)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a5c2f40585b2",
+                "label": "Right Text Link",
+                "name": "cr_right_text_link",
+                "type": "link",
+                "instructions": "Link to the right-side text , if available online.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_5a5c2f5a585b3",
+                "label": "Right Text Citation",
+                "name": "cr_right_text_citation",
+                "type": "textarea",
+                "instructions": "Citation for right-side text, if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5a5c2f7a585b4",
+                "label": "Right Text Content",
+                "name": "cr_right_text_content",
+                "type": "wysiwyg",
+                "instructions": "Write or paste the right-side text itself here.  (This will appear in the secondary text area, to the right, or below if viewed on a smaller screen.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "dhs_closereading"
+                }
+            ]
+        ],
+        "menu_order": 3,
         "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
@@ -612,7 +840,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 4,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -888,7 +1116,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 5,
         "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
@@ -1299,7 +1527,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 6,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -1345,7 +1573,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 7,
         "position": "normal",
         "style": "seamless",
         "label_placement": "top",
@@ -1396,251 +1624,12 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 8,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": [],
-        "active": true,
-        "description": ""
-    },
-    {
-        "key": "group_5c6319ccdf9cd",
-        "title": "Primary Text",
-        "fields": [
-            {
-                "key": "field_5a5c2aadf2f81",
-                "label": "Primary Text Title",
-                "name": "primary_text_title",
-                "type": "text",
-                "instructions": "Title of the Primary Text",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a5c2b16f2f82",
-                "label": "Primary Text Author",
-                "name": "primary_text_author",
-                "type": "text",
-                "instructions": "Name of the Primary Text author(s)",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a5c2dc5f2f83",
-                "label": "Primary Text Link",
-                "name": "primary_text_link",
-                "type": "wysiwyg",
-                "instructions": "Link to this text, if available.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "toolbar": "basic",
-                "media_upload": 0,
-                "tabs": "all",
-                "delay": 0
-            },
-            {
-                "key": "field_5a5c2df9f2f84",
-                "label": "Primary Text Citation",
-                "name": "primary_text_citation",
-                "type": "textarea",
-                "instructions": "Citation format for Primary Text, if available.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": 3,
-                "new_lines": "br"
-            },
-            {
-                "key": "field_5a5c2e22f2f85",
-                "label": "Primary Text Content",
-                "name": "primary_text_content",
-                "type": "wysiwyg",
-                "instructions": "Write or paste the Primary Text itself here.  (This will appear in the main text area, to the left, or above if viewed on a smaller screen.)",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "toolbar": "full",
-                "media_upload": 1,
-                "tabs": "all",
-                "delay": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "minaloy_split_text"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "acf_after_title",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": [],
-        "active": true,
-        "description": ""
-    },
-    {
-        "key": "group_5c6319ccec12f",
-        "title": "Secondary Text",
-        "fields": [
-            {
-                "key": "field_5a5c2ed5585b0",
-                "label": "Close Reading Title",
-                "name": "secondary_text_title",
-                "type": "text",
-                "instructions": "Title of the Secondary Text",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a5c2f05585b1",
-                "label": "Close Reading Author",
-                "name": "secondary_text_author",
-                "type": "text",
-                "instructions": "Name of the Secondary Text author(s)",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a5c2f40585b2",
-                "label": "Secondary Text Link",
-                "name": "secondary_text_link",
-                "type": "wysiwyg",
-                "instructions": "Link to this text, if available.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "toolbar": "basic",
-                "media_upload": 0,
-                "tabs": "all",
-                "delay": 0
-            },
-            {
-                "key": "field_5a5c2f5a585b3",
-                "label": "Secondary Text Citation",
-                "name": "secondary_text_citation",
-                "type": "textarea",
-                "instructions": "Citation format for Secondary Text, if available.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": 3,
-                "new_lines": "br"
-            },
-            {
-                "key": "field_5a5c2f7a585b4",
-                "label": "Secondary Text Content",
-                "name": "secondary_text_content",
-                "type": "wysiwyg",
-                "instructions": "Write or paste the Secondary Text itself here.  (This will appear in the secondary text area, to the right, or below if viewed on a smaller screen.)",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "toolbar": "full",
-                "media_upload": 1,
-                "tabs": "all",
-                "delay": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "minaloy_split_text"
-                }
-            ]
-        ],
-        "menu_order": 1,
-        "position": "acf_after_title",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
         "active": true,
         "description": ""
     }

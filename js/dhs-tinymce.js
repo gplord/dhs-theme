@@ -1,12 +1,12 @@
 (function() {
 
-    tinymce.create('tinymce.plugins.splittext', {
+    tinymce.create('tinymce.plugins.closereading', {
         init : function(ed, url) {
-            ed.addButton('splittext', {
+            ed.addButton('closereading', {
                 title : 'Add a Close Reading Section',
                 image : url+'/../images/icon-splitscreen-pixel.png',
                 onclick : function() {
-                     ed.selection.setContent('[splittext inline=0 id=]' + ed.selection.getContent() + '[/splittext]');
+                     ed.selection.setContent('[closereading inline=0 id=]' + ed.selection.getContent() + '[/closereading]');
                 }
             });
         },
@@ -14,7 +14,7 @@
             return null;
         },
     });
-    tinymce.PluginManager.add('splittext', tinymce.plugins.splittext);
+    tinymce.PluginManager.add('closereading', tinymce.plugins.closereading);
 
 	tinymce.create('tinymce.plugins.spacer', {
         init : function(ed, url) {

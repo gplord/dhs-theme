@@ -278,85 +278,8 @@ a.pt-cv-edit-view, a.pt-cv-edit-post {
   padding: 0.25em 0.5em;
 }
 
-.dhs_split_text {
+.dhs_closereading {
   font-size: 18px;
-}
-
-#split-text-viewer a.list-group-item.active {
-  background-color: #ddd;
-  color: #000;
-}
-
-#split-text-viewer a.list-group-item:focus {
-  background-color: #e5e5e5;
-  color: #000;
-}
-
-#split-text-viewer .list-group {
-  padding-bottom: 200px;
-}
-
-.split-text-header {
-  border: 1px solid #ccc;
-}
-
-.split-text-content {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  z-index: 1;
-}
-
-.split-text-footer {
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-
-.split-text-content a.list-group-item {
-  min-height: 250px;
-}
-
-.split-text-content a.list-group-item {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-top: none;
-  border-bottom: none;
-}
-
-.split-text-content a.list-group-item.active {
-  border: none;
-}
-
-.split-text-content a.list-group-item:hover {
-  background: #f5f5ff;
-}
-
-.split-text-content .list-group a.list-group-item:first-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.split-text-content .list-group a.list-group-item:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.split-text-header, .split-text-footer {
-  background: #eee;
-  font-size: 80%;
-  padding: 1em;
-  padding-bottom: 0.1em;
-}
-
-.split-text-header h3, .split-text-header h4 {
-  font-family: 'Sorts Mill Goudy', serif;
-}
-
-.split-text-header h3 {
-  font-family: 'Montserat', sans-serif;
-  font-size: 18pt;
-  font-weight: 500;
-}
-
-.split-text-header h4 {
-  font-size: 12pt;
 }
 
 /* Adapted from CSS "Toggle Switch" example, available at: */
@@ -579,14 +502,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .split-text-options .col-md-5 {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1em;
-  }
-  .split-text-options .col-md-5:last-child {
-    border-bottom: none;
-    margin-bottom: none;
-  }
   .fillbar {
     width: 30px;
   }
@@ -688,12 +603,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .split-text-options .col-md-5 {
-    border-right: 1px solid #ccc;
-  }
-  .split-text-options .col-md-5:last-child {
-    border-right: none;
-  }
   .fillbar {
     display: inline-block;
     width: 50px;

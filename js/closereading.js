@@ -23,24 +23,24 @@ jQuery(document).ready(function(){
 		toggleFullScreen();
     });
 
-    var primaryactive = false;
-    var secondaryactive = false;
+    var leftactive = false;
+    var rightactive = false;
 	
-	var primaryHighlightedItem;
-	var secondaryHighlightedItem;
-	var primaryActiveItem;
-	var secondaryActiveItem;
+	var leftHighlightedItem;
+	var rightHighlightedItem;
+	var leftActiveItem;
+	var rightActiveItem;
 
-    jQuery('#primary-scrollspy').hover(function(){
-        primaryactive = true;
-        secondaryactive = false;
+    jQuery('#left-scrollspy').hover(function(){
+        leftactive = true;
+        rightactive = false;
     });
-    jQuery('#secondary-scrollspy').hover(function(){
-        primaryactive = false;
-        secondaryactive = true;
+    jQuery('#right-scrollspy').hover(function(){
+        leftactive = false;
+        rightactive = true;
     });
 
-	if (jQuery("#primary-scrollspy").length) {
+	if (jQuery("#left-scrollspy").length) {
 
 		resizeSplitscreenViewer();
 
@@ -58,9 +58,9 @@ jQuery(document).ready(function(){
 		var docHeight = jQuery(window).height();
 		var viewerTop = jQuery("#closereading-viewer").offset().top;
 		var footerHeight = jQuery('.closereading-footer').outerHeight();
-		//jQuery("#primary-scrollspy").height(docHeight - viewerTop - footerHeight - 10);
-		jQuery("#closereading-primarytext").height(docHeight - viewerTop - footerHeight - 26);
-		jQuery("#secondary-scrollspy").height(docHeight - viewerTop - footerHeight - 10);
+		//jQuery("#left-scrollspy").height(docHeight - viewerTop - footerHeight - 10);
+		jQuery("#closereading-lefttext").height(docHeight - viewerTop - footerHeight - 26);
+		jQuery("#right-scrollspy").height(docHeight - viewerTop - footerHeight - 10);
 	}
 	
 	jQuery('.closereading-section').click(function () {
@@ -71,10 +71,10 @@ jQuery(document).ready(function(){
 		var target = jQuery(jQuery(this).data("other"));
         if (target.length) {
 			target.addClass("closereading-highlighted");
-			if (jQuery(this).data("this") == "primary-") {
-				secondaryHighlightedItem = target;
-			} else if (jQuery(this).data("this") == "secondary-") {
-				primaryHighlightedItem = target;
+			if (jQuery(this).data("this") == "left-") {
+				rightHighlightedItem = target;
+			} else if (jQuery(this).data("this") == "right-") {
+				leftHighlightedItem = target;
 			}
 		}
         if (jQuery('input#autoscroll').is(':checked')) {
@@ -82,11 +82,11 @@ jQuery(document).ready(function(){
 		}
 	},
 	function() {
-		if (secondaryHighlightedItem != null) {
-			secondaryHighlightedItem.removeClass("closereading-highlighted");
+		if (rightHighlightedItem != null) {
+			rightHighlightedItem.removeClass("closereading-highlighted");
 		}
-		if (primaryHighlightedItem != null) {
-			primaryHighlightedItem.removeClass("closereading-highlighted");
+		if (leftHighlightedItem != null) {
+			leftHighlightedItem.removeClass("closereading-highlighted");
 		}
 	});
 
@@ -98,31 +98,31 @@ jQuery(document).ready(function(){
 
 			var scrollWindow;
 			
-			if (element.data("this") == "primary-") {
-				scrollWindow = "#secondary-scrollspy";	
-				if (secondaryActiveItem != null) {
-					secondaryActiveItem.removeClass("closereading-active");
+			if (element.data("this") == "left-") {
+				scrollWindow = "#right-scrollspy";	
+				if (rightActiveItem != null) {
+					rightActiveItem.removeClass("closereading-active");
 				}
-				secondaryActiveItem = target;
+				rightActiveItem = target;
 								
-				if (primaryActiveItem != null) {
-					primaryActiveItem.removeClass("closereading-active");
+				if (leftActiveItem != null) {
+					leftActiveItem.removeClass("closereading-active");
 				}
 				element.addClass("closereading-active");
-				primaryActiveItem = element;
+				leftActiveItem = element;
 
-			} else if (element.data("this") == "secondary-") {
-				scrollWindow = "#primary-scrollspy";	
-				if (primaryActiveItem != null) {
-					primaryActiveItem.removeClass("closereading-active");
+			} else if (element.data("this") == "right-") {
+				scrollWindow = "#left-scrollspy";	
+				if (leftActiveItem != null) {
+					leftActiveItem.removeClass("closereading-active");
 				}
-				primaryActiveItem = target;
+				leftActiveItem = target;
 
-				if (secondaryActiveItem != null) {
-					secondaryActiveItem.removeClass("closereading-active");
+				if (rightActiveItem != null) {
+					rightActiveItem.removeClass("closereading-active");
 				}
 				element.addClass("closereading-active");
-				secondaryActiveItem = element;
+				rightActiveItem = element;
 
 			}
 			target.addClass("closereading-active");
@@ -156,32 +156,32 @@ jQuery(document).ready(function(){
 		
 		switch (this.value) {
 			case 'closereading-layout1':
-				jQuery('.closereading-layout-primary').attr("class", "col-md-9 closereading-layout-primary");
-				jQuery('.closereading-layout-secondary').attr("class", "col-md-3 closereading-layout-secondary");
+				jQuery('.closereading-layout-left').attr("class", "col-md-9 closereading-layout-left");
+				jQuery('.closereading-layout-right').attr("class", "col-md-3 closereading-layout-right");
 				break;
 			case 'closereading-layout2':
-	            jQuery('.closereading-layout-primary').attr("class", "col-md-8 closereading-layout-primary");
-		        jQuery('.closereading-layout-secondary').attr("class", "col-md-4 closereading-layout-secondary");
+	            jQuery('.closereading-layout-left').attr("class", "col-md-8 closereading-layout-left");
+		        jQuery('.closereading-layout-right').attr("class", "col-md-4 closereading-layout-right");
 				break;
 			case 'closereading-layout3':
-			    jQuery('.closereading-layout-primary').attr("class", "col-md-7 closereading-layout-primary");
-				jQuery('.closereading-layout-secondary').attr("class", "col-md-5 closereading-layout-secondary");
+			    jQuery('.closereading-layout-left').attr("class", "col-md-7 closereading-layout-left");
+				jQuery('.closereading-layout-right').attr("class", "col-md-5 closereading-layout-right");
 				break;
 			case 'closereading-layout4':
-	            jQuery('.closereading-layout-primary').attr("class", "col-md-6 closereading-layout-primary");
-		        jQuery('.closereading-layout-secondary').attr("class", "col-md-6 closereading-layout-secondary");
+	            jQuery('.closereading-layout-left').attr("class", "col-md-6 closereading-layout-left");
+		        jQuery('.closereading-layout-right').attr("class", "col-md-6 closereading-layout-right");
 				break;
 			case 'closereading-layout5':
-			    jQuery('.closereading-layout-primary').attr("class", "col-md-5 closereading-layout-primary");
-				jQuery('.closereading-layout-secondary').attr("class", "col-md-7 closereading-layout-secondary");
+			    jQuery('.closereading-layout-left').attr("class", "col-md-5 closereading-layout-left");
+				jQuery('.closereading-layout-right').attr("class", "col-md-7 closereading-layout-right");
 				break;
 			case 'closereading-layout6':
-	            jQuery('.closereading-layout-primary').attr("class", "col-md-4 closereading-layout-primary");
-		        jQuery('.closereading-layout-secondary').attr("class", "col-md-8 closereading-layout-secondary");
+	            jQuery('.closereading-layout-left').attr("class", "col-md-4 closereading-layout-left");
+		        jQuery('.closereading-layout-right').attr("class", "col-md-8 closereading-layout-right");
 				break;
 			case 'closereading-layout7':
-			    jQuery('.closereading-layout-primary').attr("class", "col-md-3 closereading-layout-primary");
-				jQuery('.closereading-layout-secondary').attr("class", "col-md-9 closereading-layout-secondary");
+			    jQuery('.closereading-layout-left').attr("class", "col-md-3 closereading-layout-left");
+				jQuery('.closereading-layout-right').attr("class", "col-md-9 closereading-layout-right");
 				break;
 			default:
 				break;
@@ -190,38 +190,38 @@ jQuery(document).ready(function(){
 	});
 
 	jQuery('#font-select').change(function() {
-		jQuery('.dhs_split_text').css("font-size", this.value + 'pt');
+		jQuery('.dhs_closereading').css("font-size", this.value + 'pt');
 	});
 	
     jQuery('input[type=radio][name=closereading-layout]').change(function() {
 	
         if (this.value == 'closereading-layout1') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-9 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-3 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-9 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-3 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout2') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-8 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-4 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-8 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-4 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout3') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-7 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-5 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-7 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-5 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout4') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-6 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-6 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-6 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-6 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout5') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-5 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-7 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-5 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-7 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout6') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-4 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-8 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-4 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-8 closereading-layout-right");
         }
         else if (this.value == 'closereading-layout7') {
-            jQuery('.closereading-layout-primary').attr("class", "col-md-3 closereading-layout-primary");
-            jQuery('.closereading-layout-secondary').attr("class", "col-md-9 closereading-layout-secondary");
+            jQuery('.closereading-layout-left').attr("class", "col-md-3 closereading-layout-left");
+            jQuery('.closereading-layout-right').attr("class", "col-md-9 closereading-layout-right");
         }
 
     });
@@ -246,7 +246,7 @@ jQuery(document).ready(function(){
                 var originalTopPosition = target.position().top - target.parent().position().top;
 
                 if (smoothscroll) {
-					jQuery('#secondary-scrollspy').animate({ scrollTop: originalTopPosition }, 500, function() {
+					jQuery('#right-scrollspy').animate({ scrollTop: originalTopPosition }, 500, function() {
 						// Callback after animation
 						// Must change focus!
 						var target = jQuery(target);

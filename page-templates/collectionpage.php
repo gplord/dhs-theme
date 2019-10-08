@@ -23,7 +23,60 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+                        <?php get_template_part( 'loop-templates/content', 'page' ); ?>
+                        
+                        <?php
+
+                            $id = get_the_ID();
+                            $args = array(
+                                'post_type'      => 'page',
+                                'posts_per_page' => -1,
+                                'post_parent'    => $id,
+                                'order'          => 'ASC',
+                                'orderby'        => 'menu_order'
+                            );
+                            $parent = new WP_Query( $args );
+
+                            if ( $parent->have_posts() ) : 
+
+                        ?>
+
+                    <div class="pt-cv-wrapper">
+                        <div class="row">
+
+                        <?php 									
+                            while ( $parent->have_posts() ) : $parent->the_post();
+                        ?>
+                            <div class="col-md-4">
+
+                                <div class="card biography-card">
+
+                                    <div class="card-body biography-content">
+                                        <?php
+                                            echo "<a href='" . get_the_permalink() . "'>";
+                                            echo get_the_post_thumbnail( $parent->ID, array(200,200));
+                                            echo "</a>";
+                                        ?>
+                                    </div>
+                                    <div class="card-footer">
+                                        <?php
+                                            echo "<p><a href='" . get_the_permalink() . "'>" . get_the_title() . "</a></p>\n";
+                                        ?>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <?php endwhile; ?>
+
+                        </div>
+                    </div>
+
+
+                        <?
+                            endif; 
+                            wp_reset_postdata();
+                        ?>
 
 
 					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#metadataview" aria-expanded="true" aria-controls="metadataview">Show/Hide Collection Metadata</button>
@@ -131,12 +184,15 @@ $container = get_theme_mod( 'understrap_container_type' );
                         echo "<div style='padding: 50px; background: #ddd; font-size: 75%'>";
                         echo "<div style='background: #fff; font-size: 75%; padding: 1em 0'>\n";
                             echo "<pre>\n";
+
+global $wp;
+$current_url = home_url(add_query_arg(array(), $wp->request));
                  
 echo htmlspecialchars('
-    <mlna:Description rdf:about="https://mina-loy.com/chapters/">
+    <mlna:Description rdf:about="' . $current_url . '">
         <collex:federation>ModNets</collex:federation>
         <collex:archive>loy</collex:archive>
-        <dc:title>Mina Loy Baedeker: Scholarly Handbook for Digital Travelers</dc:title>');
+        <dc:title>' . get_the_title() . '</dc:title>');
         
         
 
@@ -179,36 +235,11 @@ echo htmlspecialchars('
         <collex:fulltext>True</collex:fulltext>');
         
 echo htmlspecialchars('
-        <dc:date>' . the_field('ml_date') . '</dc:date>');
+        <dc:date>' . get_field('ml_date') . '</dc:date>');
         
 echo htmlspecialchars('
-        <collex:text>Mina Loy Baedeker: Scholarly Handbook for Digital Travelers By Suzanne W.
-            Churchill, Linda A. Kinnahan, and Susan Rosenbaum Preamble These are suspect places –
-            Mina Loy, “Songs to Joannes” Mina Loy Baedeker charts Loy’s navigation of Italian
-            Futurism, New York Dada, and French and American Surrealism between the 1910s and the
-            1960s. Analyzing and interpreting her shifting avant-garde affiliations, experiments
-            with genre and media, and geographic migrations, the chapters serve as a Scholarly
-            Handbook for Digital Travelers. 3 baedekers The term “Baedeker” emerged in 1826, when
-            German publisher Verlag Karl Baedeker began to publish travel guides for cities around
-            the world, which included introductions, fold-out maps, travel routes, and information
-            about important sights and destinations, all written by experts. Popularly called
-            “Baedekers,” the guides became best-sellers and were translated into multiple languages
-            (Wikipedia). cover of Lunar Baedeker and Time-tablesMina Loy, a world-traveler, likely
-            relied on the guides for practical advice. She also drew upon them for imaginative
-            inspiration, adopting the phrase “Lunar Baedeker”—guidebook to the moon—for the two
-            volumes of her writing published in her lifetime: Lunar Baedecker [sic] (Contact
-            Publishing Co., 1923). The Lunar Baedeker &amp; Time-Tables (Jonathan Williams, 1958)
-            Posthumous collections of her work have used the same title phrase: The Last Lunar
-            Baedeker (Jargon Society, 1982). The Lost Lunar Baedeker: Poems of Mina Loy (Farrar,
-            Straus &amp; Giroux, 1996). In calling our scholarly chapters a “Mina Loy Baedeker,” we
-            acknowledge Loy’s ingenious use of innovative forms to navigate real and imagined
-            territory, as well as contemporary readers’ need for a new kind of handbook for
-            navigating her complex archive. The Handbook is organized chronologically and
-            geographically, following Loy’s movements through time and space. The chapters may be
-            read consecutively, or navigate your own path. Note: In Spring 2019, Mina Loy Baedeker
-            will be subjected to double-blind peer review by ModNets and a process of public peer
-            review via Hypothes.is.</collex:text>
-        <rdfs:seeAlso rdf:resource="https://mina-loy.com/chapters/"/>');
+        <collex:text>' . get_field('ml_collex_text'). '</collex:text>
+        <rdfs:seeAlso rdf:resource="' . $current_url . '"/>');
         
         $id = 2916;
         $args = array(
