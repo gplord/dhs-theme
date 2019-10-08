@@ -42,6 +42,19 @@ if ( $parent->have_posts() ) :
 ?>
 
 <div class="pt-cv-wrapper">
+
+<?php
+
+$toc = $parent->post_parent;
+$toc_get = get_post($toc);
+if ($toc_get != null) {
+	$grandparent = $toc_get->post_parent;
+	echo "<p><a class='btn btn-primary' href='" . get_page_link($grandparent) . "'>&laquo; Table of Contents</a></p>\n";
+}
+
+?>
+
+
 <div class="row">
 
 <?php 									

@@ -128,7 +128,10 @@ jQuery(document).ready(function(){
 			target.addClass("closereading-active");
 
             // Adjusted code to scroll to position relative to overflow parent _gpl
-            var originalTopPosition = target.position().top - target.parent().position().top;
+			var originalTopPosition = target.position().top - target.parent().position().top;
+			if (target.hasClass("closereading-inline")) {
+				originalTopPosition = target.parent().position().top - target.parent().parent().position().top;
+			}
 
             if (smoothscroll) {
 				jQuery(scrollWindow).clearQueue();

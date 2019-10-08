@@ -42,6 +42,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         ?>
 
                     <div class="pt-cv-wrapper">
+                        
+                        <h4>Chapters</h4>
+                        
                         <div class="row">
 
                         <?php 									

@@ -68,6 +68,7 @@ function custom_theme_setup() {
 	add_image_size('grid-thumbnail', 240, 240, true );
 	//add_image_size('edg-thumbnail', 349, 195, array('left','top'));
 	add_image_size('edg-thumbnail', 349, 195, true);
+	add_image_size('edg-thumbnail-sm', 250, 150, true);
 	add_image_size('bio-thumbnail', 349, 349, true);
 	add_image_size('medium', get_option( 'medium_size_w' ), get_option( 'medium_size_h' ), true );
 }
@@ -86,6 +87,13 @@ function dhs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'dhs_custom_excerpt_length', 999 );
  
+function wpd_tax_alpha( $query ) {
+    if ( $query->is_category('biography') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+add_action( 'pre_get_posts', 'wpd_tax_alpha' );
 
 /**
  * Class WP_Bootstrap_Navwalker

@@ -130,26 +130,6 @@
 			</div>
 			*/
 			?>
-			<div class="row">
-				<div class="col-md-12">
-					<h5 class="biography card-title">Kind of Artist/Cultural Worker</h5>
-					<p><?php echo get_field("kind_of_artist_cultural_worker"); ?></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h5 class="biography card-title">Avant-Garde Movements Associated With</h5>
-					<p><?php echo get_field("avantgarde_movements_the_figure_was_associated_with"); ?></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h5 class="biography card-title">Date &amp; Places of Overlap with Loy</h5>
-					<p><?php echo get_field("date_places_of_overlap_with_loy"); ?>
-				</div>
-			</div>
-			
-
 		  </div>
 		</div>
 
