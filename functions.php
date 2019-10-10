@@ -1,5 +1,7 @@
 <?php
 
+include('customizer.php');
+
 function understrap_remove_scripts() {
     // Removes the parent themes stylesheet and scripts from inc/enqueue.php
     wp_dequeue_style( 'understrap-styles' );

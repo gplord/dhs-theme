@@ -185,10 +185,10 @@ $the_pages = new WP_Query( $args );
             echo "<pre id='rdf-collection-content'>\n";
  
 echo htmlspecialchars('
-    <mlna:Description rdf:about="' . $chapters_url . '">
-        <collex:federation>ModNets</collex:federation>
-        <collex:archive>' . $collex_archive. '</collex:archive>
-        <dc:title>' . $dc_title. '/dc:title>');
+    <mlna:Description rdf:about="' . get_theme_mod('collection_chapters_url', get_permalink()) . '">
+        <collex:federation>' . get_theme_mod('collection_collex_federation', 'ModNets') . '</collex:federation>
+        <collex:archive>' . get_theme_mod('collection_collex_archive_text') . '</collex:archive>
+        <dc:title>' . get_theme_mod('collection_name_text') . '/dc:title>');
 
 for ($i = 0; $i < count($collection_authors); $i++) {
     echo htmlspecialchars('
@@ -228,7 +228,7 @@ echo htmlspecialchars('
         
 echo htmlspecialchars('
         <collex:text>' . get_field('ml_collex_text') . '</collex:text>
-        <rdfs:seeAlso rdf:resource="' . $chapters_url . '"/>');
+        <rdfs:seeAlso rdf:resource="' . get_theme_mod('collection_chapters_url', get_permalink()) . '"/>');
         
         $id = 2916;
         $args = array(
@@ -482,7 +482,7 @@ if( $my_query->have_posts() ){
 echo htmlspecialchars('
     <mlna:Description rdf:about="' . get_permalink() . '">
         <collex:federation>ModNets</collex:federation>
-        <collex:archive>' . $collex_archive . '</collex:archive>
+        <collex:archive>' . get_theme_mod('collection_collex_archive_text') . '</collex:archive>
         <dc:title>' . get_field('ml_chapter_title') . '</dc:title>
         <!-- See the COLLEX RDF guidelines for more role codes, or you can use any 
             valid LC relator codes -->');
@@ -573,7 +573,7 @@ echo htmlspecialchars('
 
 echo htmlspecialchars('
         <!-- Relate this object to its parent object using dcterms:isPartOf-->
-        <dcterms:isPartOf rdf:resource="' . $chapters_url . '"/>
+        <dcterms:isPartOf rdf:resource="' . get_theme_mod('collection_chapters_url', get_permalink()) . '"/>
     </mlna:Description>
 ');
         

@@ -192,18 +192,11 @@ global $wp;
 $current_url = home_url(add_query_arg(array(), $wp->request));
                  
 echo htmlspecialchars('
-    <mlna:Description rdf:about="' . $current_url . '">
-        <collex:federation>ModNets</collex:federation>
-        <collex:archive>loy</collex:archive>
-        <dc:title>' . get_the_title() . '</dc:title>');
+    <mlna:Description rdf:about="' . get_theme_mod('collection_chapters_url', get_permalink()) . '">
+        <collex:federation>' . get_theme_mod('collection_collex_federation', 'ModNets') . '</collex:federation>
+        <collex:archive>' . get_theme_mod('collection_collex_archive_text') . '</collex:archive>
+        <dc:title>' . get_theme_mod('collection_name_text') . '</dc:title>');
         
-        
-
-
-
-
-
-
 for ($i = 0; $i < count($collection_authors); $i++) {
     echo htmlspecialchars('
         <role:AUT>' . $collection_authors[$i] . '</role:AUT>');
@@ -259,7 +252,7 @@ echo htmlspecialchars('
             while ( $parent->have_posts() ) : $parent->the_post();
         
                 echo htmlspecialchars('
-        <dcterms:hasPart rdf:resource="' . get_permalink() . '"/>');
+        <dcterms:hasPart rdf:resource="' . get_theme_mod('collection_chapters_url', get_permalink()) . '"/>');
         
             endwhile; 
         endif; 
@@ -279,19 +272,6 @@ echo htmlspecialchars('
 					</div>
 					
 					<?php endwhile; // end of the loop. ?>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 
 				</main><!-- #main -->
 

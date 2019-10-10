@@ -1215,6 +1215,17 @@ div.closereadings-metadata .excerpt {
   fill: #666;
 }
 
+.navbar-nav > li:hover > .dropdown-menu {
+display: block;
+top: 30px;
+}
+.navbar-nav li > .dropdown-menu li:hover .dropdown-menu {
+left: 190px;
+top: 0;
+width: 200px !important;
+display: block;
+}
+
 
 /* Custom full-screen styles ----------------------------------------------------- */
 
