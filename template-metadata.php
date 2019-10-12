@@ -28,7 +28,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-9 content-area" id="primary">
 			    
-			    <h3>Digital Humanities Scholarship: Metadata Export</h3>
+                <h3>Digital Humanities Scholarship: Metadata Export</h3>
+                <h4>So: <?php echo get_theme_mod('dhs_metadata_permalink'); ?>
+                <h4>So: <?php echo get_theme_mod('collection_name_text'); ?>
 
 				<main class="site-main" id="main" role="main">
 

@@ -44,7 +44,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						</form>-->					
 						<div class="row pdf-downloadbar">
 							<div class="col-md-9 text-left">
-								<p class="lightbox-label">Click and drag the posts below to rearrange them. Scroll down to read your En Dehors Garde formation in full. (Please view in Chrome or Firefox, as the PDF exporter may not work in other browsers.)</p>
+								<p class="lightbox-label">Click and drag the posts below to rearrange them. Scroll down to read your custom formation in full. (Please view in Chrome or Firefox, as the PDF exporter may not work in other browsers.)</p>
 								<div id="pdf-progressbar">
 									<div class="progress">
 										<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
@@ -78,7 +78,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							 * If you want to override this in a child theme, then include a file
 							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 							 */
-							get_template_part( 'loop-templates/content-endehorsgarde' );
+							get_template_part( 'loop-templates/content-flashmob' );
 							?>
 
 						<?php endwhile; ?>											
@@ -99,7 +99,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							 * If you want to override this in a child theme, then include a file
 							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 							 */
-							get_template_part( 'loop-templates/content-endehorsgardepdf' );
+							get_template_part( 'loop-templates/content-flashmobpdf' );
 							?>
 
 						<?php endwhile; ?>

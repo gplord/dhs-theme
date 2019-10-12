@@ -24,8 +24,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					<?php while ( have_posts() ) : the_post(); ?>
 					
 						<?php
-							if(has_category('endehorsgarde')){
-								get_template_part('loop-templates/content','singleendehorsgarde');
+							if(has_category('flashmob')){
+								get_template_part('loop-templates/content','singleflashmob');
 							} else if (has_category('biography')) {
 								get_template_part( 'loop-templates/content', 'biography' );
 							}else {

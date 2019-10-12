@@ -35,6 +35,9 @@ function cd_customizer_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'collection_collex_federation' , array(
 		'default'     => 'ModNets'
 	) );
+	$wp_customize->add_setting( 'dhs_metadata_permalink' , array(
+		'default'     => 'metadata'
+	) );
 
 	$wp_customize->add_control( 'collection_name_text', array(
 		'label'        => 'Collection Name',
@@ -53,6 +56,11 @@ function cd_customizer_settings( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'collection_collex_federation', array(
 		'label'        => 'Collection Federation',
+		'section'    => 'cd_metadata',
+		'type'   => 'text',
+	) );
+	$wp_customize->add_control( 'dhs_metadata_permalink', array(
+		'label'        => 'Metadata Page Permalink',
 		'section'    => 'cd_metadata',
 		'type'   => 'text',
 	) );

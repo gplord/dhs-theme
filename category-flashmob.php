@@ -28,7 +28,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php 
 					$query = new WP_Query( array( 
 						'post_type' => 'post',
-						'category_name' => 'endehorsgarde',
+						'category_name' => 'flashmob',
 						'orderby' => 'rand'
 					) ); 
 				?>
@@ -36,20 +36,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php if ( $query->have_posts() ) : ?>
 
 					<header class="page-header">
-						<h1 class="page-title">Post(card)s: En Dehors Garde Flash Mob </h1>
+						<h1 class="page-title">Flash Mob Entries</h1>
 						<?php
 						//the_archive_title( '<h1 class="page-title">', '</h1>' );
 						//the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
 				
-				<p>In Summer 2018, dozens of writers, artists, students, and scholars joined a digital “<a href="https://mina-loy.com/chapters/avant-garde-theory-2/digital-flash-mob/">flash mob</a>,” submitting post(card)s that expressed their ideas about the <a href="https://mina-loy.com/chapters/avant-garde-theory-2/the-en-dehors-garde/">en dehors garde</a>—a term we coined to account for women, people of color, and others who have been marginalized or excluded from histories of the avant-garde. These are their post(card)s:</p>
 				<p></p>
 															
 					<div class="alert alert-info text-center" role="alert">
 						<p class="lightbox-label" style="font-family: 'Montserrat', sans-serif">
-						To select a post(card), check the button in the top, right corner of the card.
-						<br>Click "View in Lightbox" to see the selected post(card)s combined in a rearrangeable format.
+						To select a flash mob entry, check the button in the top, right corner of the card.
+						<br>Click "View in Lightbox" below to see the selected entries combined in a rearrangeable format.
 						</p>
 						<form id="lightbox-selection" action="/Lightbox" method="post">
 							<input type="hidden" id="lightbox-ids" name="ids" value="">
@@ -71,7 +70,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'loop-templates/content-endehorsgarde' );
+						get_template_part( 'loop-templates/content-flashmob' );
 
 						?>
 

@@ -116,7 +116,9 @@ jQuery(document).ready(function(){
 		var pageCount = 1;		// Current page used through the traversal, and total number, used for page numbering afterwards
 		var usePageNumbering = true;	// Default to including page numbering -- set to false if these are not desired
 		var useFooterSiteLink = true;
-		var footerSiteLinkURL = 'http://www.mina-loy.com/endehorsgarde';
+
+		// CUSTOMIZE: Add the URL to your Flash Mob entries page between the quotes on the next line, to have your Flash Mob URL appear on the bottom of the PDF
+		var footerSiteLinkURL = '';
 
 		var siteWidth = 1110;	// Width in pixels of the website -- used to calculate image ratios
 		var maxHeight = 8;		// Maximum allowed height of images (in inches)
