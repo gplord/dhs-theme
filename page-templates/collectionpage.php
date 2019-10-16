@@ -92,12 +92,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         $collection_authors = array();
                         echo "<h5>Collection Authors</h5>\n";
                         // check if the repeater field has rows of data
-                        if( have_rows('ml_authors') ):
+                        if( have_rows('dhs_authors') ):
                          	// loop through the rows of data
-                            while ( have_rows('ml_authors') ) : the_row();
+                            while ( have_rows('dhs_authors') ) : the_row();
                                 // display a sub field value
-                                the_sub_field('ml_author');
-                                $author = get_sub_field('ml_author');
+                                the_sub_field('dhs_author');
+                                $author = get_sub_field('dhs_author');
                                 array_push($collection_authors, $author);
                                 echo "<br>";
                             endwhile;
@@ -111,12 +111,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         $collection_editors = array();
                         echo "<h5>Collection Editors</h5>\n";
                         // check if the repeater field has rows of data
-                        if( have_rows('ml_editors') ):
+                        if( have_rows('dhs_authors') ):
                          	// loop through the rows of data
-                            while ( have_rows('ml_editors') ) : the_row();
+                            while ( have_rows('dhs_authors') ) : the_row();
                                 // display a sub field value
-                                the_sub_field('ml_editor');
-                                $collection_editor = get_sub_field('ml_editor');
+                                the_sub_field('dhs_editor');
+                                $collection_editor = get_sub_field('dhs_editor');
                                 array_push($collection_editors, $collection_editor);
                                 echo "<br>";
                             endwhile;
@@ -130,12 +130,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         $collection_creators = array();
                         echo "<h5>Collection Creators</h5>\n";
                         // check if the repeater field has rows of data
-                        if( have_rows('ml_creators') ):
+                        if( have_rows('dhs_creators') ):
                          	// loop through the rows of data
-                            while ( have_rows('ml_creators') ) : the_row();
+                            while ( have_rows('dhs_creators') ) : the_row();
                                 // display a sub field value
-                                the_sub_field('ml_creator');
-                                $collection_creator = get_sub_field('ml_creator');
+                                the_sub_field('dhs_creator');
+                                $collection_creator = get_sub_field('dhs_creator');
                                 array_push($collection_creators, $collection_creator);
                                 echo "<br>";
                             endwhile;
@@ -149,12 +149,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         $collection_genres = array();
                         echo "<h5>Collection Genres</h5>\n";
                         // check if the repeater field has rows of data
-                        if( have_rows('ml_genres') ):
+                        if( have_rows('dhs_genres') ):
                         
-                         	while( have_rows('ml_genres') ): the_row();
+                         	while( have_rows('dhs_genres') ): the_row();
                         
                         		// vars
-                        		$select = get_sub_field_object('ml_genre');
+                        		$select = get_sub_field_object('dhs_genre');
                         		$value = $select['value'];
                         		echo $value['label'] . "<br>\n";
                         		array_push($collection_genres, $value['label']);
@@ -170,12 +170,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         // Populate Disciplines array for below
                         $collection_disciplines = array();
                         echo "<h5>Collection Disciplines</h5>\n";
-                        if( have_rows('ml_disciplines') ):
+                        if( have_rows('dhs_disciplines') ):
                         
-                        	while( have_rows('ml_disciplines') ): the_row();
+                        	while( have_rows('dhs_disciplines') ): the_row();
                         
                         		// vars
-                        		$select = get_sub_field_object('ml_discipline');
+                        		$select = get_sub_field_object('dhs_disciplines');
                         		$value = $select['value'];
                         		echo $value['label'] . "<br>\n";
                         		array_push($collection_disciplines, $value['label']);
@@ -231,7 +231,7 @@ echo htmlspecialchars('
         <collex:fulltext>True</collex:fulltext>');
         
 echo htmlspecialchars('
-        <dc:date>' . get_field('ml_date') . '</dc:date>');
+        <dc:date>' . get_field('dhs_date') . '</dc:date>');
         
 echo htmlspecialchars('
         <collex:text>' . get_field('ml_collex_text'). '</collex:text>

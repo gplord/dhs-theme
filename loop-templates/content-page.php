@@ -14,7 +14,7 @@
 
 		<?php 
 
-		if (get_field("ml_peer_reviewed")) {
+		if (get_field("dhs_peer_reviewed")) {
 			/* CUSTOMIZE: Replace with your Collection's peer review info page, e.g. https://mina-loy.com/peer-review/ */
 			echo '<a class="btn btn-primary linkbutton peer-review-button" href="#">Peer Reviewed</a>';
 		}

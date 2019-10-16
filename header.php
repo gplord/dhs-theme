@@ -26,14 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
-	
-<!--
-	<script type="application/json" class="js-hypothesis-config">
-		{"showHighlights": false}
-	</script>
-	<script src="https://hypothes.is/embed.js" async></script>
--->
-
 </head>
 
 <body <?php body_class(); ?>>

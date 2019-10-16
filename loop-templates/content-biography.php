@@ -153,8 +153,7 @@
 		<?php 
 
 			$args = array(
-				'post_type'      => 'post',
-				'category_name'  => 'Biography',
+				'post_type'      => 'dhs_biography',
 				'order'          => 'ASC',
 				'orderby'        => 'title'
 			);

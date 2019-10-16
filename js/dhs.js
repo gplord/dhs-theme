@@ -85,15 +85,16 @@ jQuery(document).ready(function(){
         document.body.removeChild(element); 
     }
 	
-	jQuery("#rdf-download-collection").click(function() {
-        var text = jQuery("#rdf-collection-content").text();
-        var filename = rdfDownloadPrefix + "-collection.rdf";
+	jQuery(".rdf-download-collection").click(function() {
+		var id = jQuery(this).attr("data-id");
+	    var text = jQuery("#rdf-collection-" + id).text();
+        var filename = rdfDownloadPrefix + "-collection-" + id + ".rdf";
         rdfdownload(filename, text);
 	});
 	
 	jQuery(".rdf-download-chapter").click(function() {
 	    var id = jQuery(this).attr("data-id");
-	    var text = jQuery("#rdf-" + id).text();
+	    var text = jQuery("#rdf-chapter-" + id).text();
 	    var filename = rdfDownloadPrefix + "-chapter-" + id + ".rdf";
 	    rdfdownload(filename, text);
 	});

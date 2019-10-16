@@ -38,6 +38,15 @@ function understrap_posted_on()
 	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 }
 
+function dhs_setup_options () {		// Loaded when theme is first activated, used for default settings
+	
+	// CUSTOMIZE: If you want a sidebar displayed, this option can be changed in Appearance > Customize > Theme Layout Settings
+	// Please note: This theme was not designed to make use of a sidebar, so the layout will need to be customized to your theme
+	set_theme_mod('understrap_sidebar_position','none');
+	
+}
+add_action('after_switch_theme', 'dhs_setup_options');
+
 function dhs_enqueue_styles()
 {
 
@@ -115,7 +124,10 @@ add_action('init', function () {
 			exit(); // just exit if template was found and loaded
 		}
 	}
+
 });
+
+
 
 
 /**

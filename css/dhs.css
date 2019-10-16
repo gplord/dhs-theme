@@ -1195,7 +1195,7 @@ div.closereadings-metadata .excerpt {
   border-top: none;
 }
 
-.pt-cv-ctf-ml_peer_reviewed {
+.pt-cv-ctf-dhs_peer_reviewed {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1476,8 +1476,7 @@ div.closereadings-metadata .excerpt {
   height: 240px;
 }
 
-.pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-ml_peer_reviewed {
-  background: #777;
+.peer-review-button, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-dhs_peer_reviewed {
   background: #5f7a90;
   font-size: 12pt;
   padding: 0.5em;
@@ -1489,12 +1488,43 @@ div.closereadings-metadata .excerpt {
   margin: 0;
 }
 
+.metadata-box {
+  background: #eee;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.metadata-box .metadata-box {
+  background: #ddd;
+}
+.rdf-metadata-box {
+  padding: 1em; 
+  background: #ddd; 
+  font-size: 75%;
+}
+.metadata-box .metadata-box .rdf-metadata-box {
+  background: #ccc;
+}
+.rdf-metadata-container {
+  background: #fff; 
+  font-size: 75%; 
+  padding: 1em 0;
+}
+.rdf-metadata-content {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+.metadata-box .row {
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+
 /* Peer Review Badges ----------------------------------------------------------- */
 
   /* Disables Peer Review Badges/Buttons */
   /* To disable them on the site, uncomment these next two selectors: */
 
-  /* .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-ml_peer_reviewed {
+  /* .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_post, .pt-cv-custom-fields.pt-cv-ctf-peer_reviewed_page, .pt-cv-custom-fields.pt-cv-ctf-dhs_peer_reviewed {
     display: none;
   }
 

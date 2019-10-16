@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying all single posts.
+ * The template for displaying Close Readings pages.
  *
  * @package understrap
  */

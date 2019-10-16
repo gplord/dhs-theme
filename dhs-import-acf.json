@@ -512,7 +512,7 @@
             {
                 "key": "field_5c79740a4d52d",
                 "label": "Authors",
-                "name": "ml_authors",
+                "name": "dhs_authors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -531,7 +531,7 @@
                     {
                         "key": "field_5c79740a4ee77",
                         "label": "Author",
-                        "name": "ml_author",
+                        "name": "dhs_author",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -552,7 +552,7 @@
             {
                 "key": "field_5c79740a51114",
                 "label": "Editors",
-                "name": "ml_editors",
+                "name": "dhs_authors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -571,7 +571,7 @@
                     {
                         "key": "field_5c79740a5205b",
                         "label": "Editor",
-                        "name": "ml_editor",
+                        "name": "dhs_editor",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -592,7 +592,7 @@
             {
                 "key": "field_5c79740a53d11",
                 "label": "Creators",
-                "name": "ml_creators",
+                "name": "dhs_creators",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -611,7 +611,7 @@
                     {
                         "key": "field_5c79740a54ddd",
                         "label": "Creator",
-                        "name": "ml_creator",
+                        "name": "dhs_creator",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -632,7 +632,7 @@
             {
                 "key": "field_5c79740a5a662",
                 "label": "Date",
-                "name": "ml_date",
+                "name": "dhs_date",
                 "type": "date_picker",
                 "instructions": "",
                 "required": 0,
@@ -649,7 +649,7 @@
             {
                 "key": "field_5c79740a5bc1e",
                 "label": "Genres",
-                "name": "ml_genres",
+                "name": "dhs_genres",
                 "type": "repeater",
                 "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
                 "required": 0,
@@ -668,7 +668,7 @@
                     {
                         "key": "field_5c79740a5d36d",
                         "label": "Genre",
-                        "name": "ml_genre",
+                        "name": "dhs_genre",
                         "type": "select",
                         "instructions": "",
                         "required": 0,
@@ -735,7 +735,7 @@
             {
                 "key": "field_5c79740a5fd44",
                 "label": "Disciplines",
-                "name": "ml_disciplines",
+                "name": "dhs_disciplines",
                 "type": "repeater",
                 "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
                 "required": 0,
@@ -754,7 +754,7 @@
                     {
                         "key": "field_5c79740a60dbd",
                         "label": "Discipline",
-                        "name": "ml_discipline",
+                        "name": "dhs_disciplines",
                         "type": "select",
                         "instructions": "",
                         "required": 1,
@@ -1151,7 +1151,7 @@
             {
                 "key": "field_5c6270ef66735",
                 "label": "Chapter Title",
-                "name": "ml_chapter_title",
+                "name": "dhs_chapter_title",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -1170,7 +1170,7 @@
             {
                 "key": "field_5c62709e5b91c",
                 "label": "Authors",
-                "name": "ml_authors",
+                "name": "dhs_authors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1189,7 +1189,7 @@
                     {
                         "key": "field_5c6270b35b91d",
                         "label": "Author",
-                        "name": "ml_author",
+                        "name": "dhs_author",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1210,7 +1210,7 @@
             {
                 "key": "field_5c6270d966733",
                 "label": "Editors",
-                "name": "ml_editors",
+                "name": "dhs_authors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1229,7 +1229,7 @@
                     {
                         "key": "field_5c6270e766734",
                         "label": "Editor",
-                        "name": "ml_editor",
+                        "name": "dhs_editor",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1250,7 +1250,7 @@
             {
                 "key": "field_5c794c2f1d144",
                 "label": "Creators",
-                "name": "ml_creators",
+                "name": "dhs_creators",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1269,7 +1269,7 @@
                     {
                         "key": "field_5c794c411d145",
                         "label": "Creator",
-                        "name": "ml_creator",
+                        "name": "dhs_creator",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1290,7 +1290,7 @@
             {
                 "key": "field_5c62710b66738",
                 "label": "Date",
-                "name": "ml_date",
+                "name": "dhs_date",
                 "type": "date_picker",
                 "instructions": "",
                 "required": 0,
@@ -1307,7 +1307,7 @@
             {
                 "key": "field_5c62712566739",
                 "label": "Genres",
-                "name": "ml_genres",
+                "name": "dhs_genres",
                 "type": "repeater",
                 "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
                 "required": 0,
@@ -1326,7 +1326,7 @@
                     {
                         "key": "field_5c6329ca2aa42",
                         "label": "Genre",
-                        "name": "ml_genre",
+                        "name": "dhs_genre",
                         "type": "select",
                         "instructions": "",
                         "required": 0,
@@ -1393,7 +1393,7 @@
             {
                 "key": "field_5c794cc5f6abe",
                 "label": "Disciplines",
-                "name": "ml_disciplines",
+                "name": "dhs_disciplines",
                 "type": "repeater",
                 "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
                 "required": 0,
@@ -1412,7 +1412,7 @@
                     {
                         "key": "field_5c794ce7f6abf",
                         "label": "Discipline",
-                        "name": "ml_discipline",
+                        "name": "dhs_disciplines",
                         "type": "select",
                         "instructions": "",
                         "required": 1,
@@ -1465,7 +1465,7 @@
             {
                 "key": "field_5c6da3fb25b05",
                 "label": "Peer Reviewed",
-                "name": "ml_peer_reviewed",
+                "name": "dhs_peer_reviewed",
                 "type": "checkbox",
                 "instructions": "Whether this chapter or collection has been peer reviewed",
                 "required": 0,
@@ -1488,7 +1488,7 @@
             {
                 "key": "field_5c7d45c948584",
                 "label": "Peer Review Date",
-                "name": "ml_reviewdate",
+                "name": "dhs_peer_review_date",
                 "type": "date_picker",
                 "instructions": "The date of most recent peer review",
                 "required": 0,
