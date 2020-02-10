@@ -1,5 +1,11 @@
 <mlna:Description rdf:about="<?php echo get_theme_mod('collection_chapters_url', get_permalink()); ?>">
-    <collex:federation><?php echo get_field('dhs_federation'); ?></collex:federation>
+<?php
+for ($i = 0; $i < count($collection_federations); $i++) :
+?>
+    <collex:federation><?php echo $collection_federations[$i]; ?></collex:federation>
+<?php
+endfor;
+?>
     <collex:archive><?php echo get_field('dhs_shorthand_ref'); ?></collex:archive>
     <dc:title><?php echo get_field('dhs_collection_title'); ?></dc:title>');
 <?php

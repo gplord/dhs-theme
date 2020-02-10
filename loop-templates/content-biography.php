@@ -69,12 +69,16 @@
 							<h5 class="biography card-title">Name</h5>
 							<p><?php echo get_field("biography_name"); ?>
 						</div>
-						<div class="col-md-12">							
+						<div class="col-md-12">
+							<?php
+								$birthdate = get_field("date_of_birth");
+								$birthplace = get_field("place_of_birth");								
+								if (($birthdate != null) || ($birthplace != null)):
+							?>
 							<h5 class="biography card-title">Birth</h5>
+							<?php endif; ?>
 							<p>
 								<?php 
-									$birthdate = get_field("date_of_birth");
-									$birthplace = get_field("place_of_birth");
 									if ($birthdate != null) 
 										echo get_field("date_of_birth");
 									if (($birthdate != null) && ($birthplace != null))
@@ -84,12 +88,16 @@
 								?>
 							</p>
 						</div>
-						<div class="col-md-12">		
+						<div class="col-md-12">
+							<?php 
+								$deathdate = get_field("date_of_death");
+								$deathplace = get_field("place_of_death");
+								if (($deathdate != null) || ($deathplace != null)):
+							?>
 							<h5 class="biography card-title">Death</h5>
+							<?php endif; ?>
 							<p>
 								<?php 
-									$deathdate = get_field("date_of_death");
-									$deathplace = get_field("place_of_death");
 									if ($deathdate != null) 
 										echo get_field("date_of_death");
 									if (($deathdate != null) && ($deathplace != null))
@@ -146,7 +154,7 @@
 		?>
 		
 		<?php 
-		    echo "<h2>Other Biographies</h2>\n";
+		    echo "<h2>All Biographies</h2>\n";
 		?>
 		<?php //echo do_shortcode("[pt_view id=e1d7ac0jdl]"); ?>
 

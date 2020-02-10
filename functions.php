@@ -111,22 +111,22 @@ function wpd_tax_alpha($query)
 }
 add_action('pre_get_posts', 'wpd_tax_alpha');
 
-
+remove_action('shutdown', 'wp_ob_end_flush_all', 1);
 
 // DHS Custom Metadata page, as reserved URL
-add_action('init', function () {
+/*add_action('init', function () {
 	$url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
 	if ($url_path === get_theme_mod('dhs_metadata_permalink')) {
 		// load the file if exists
 		// CUSTOMIZE: Replace the template- filename below with your replacement template, if desired
 		$load = locate_template('template-metadata.php', true);
 		if ($load) {
-			exit(); // just exit if template was found and loaded
+			//exit(); // just exit if template was found and loaded
 		}
 	}
 
 });
-
+*/
 
 
 

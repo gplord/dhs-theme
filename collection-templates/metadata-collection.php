@@ -76,6 +76,28 @@
     <div class="col">
         <?php
 
+        $collection_federations = array();
+        echo "<h5>Collection Federations</h5>\n";
+        // check if the repeater field has rows of data
+        if (have_rows('dhs_federations')) :
+
+            while (have_rows('dhs_federations')) : the_row();
+
+                the_sub_field('dhs_federation');
+                $collection_federation = get_sub_field('dhs_federation');
+                array_push($collection_federations, $collection_federation);
+                echo "<br>";
+
+            endwhile;
+        else :
+        // no rows found
+        endif;
+
+        ?>
+    </div>
+    <div class="col">
+        <?php
+
         $collection_genres = array();
         echo "<h5>Collection Genres</h5>\n";
         // check if the repeater field has rows of data

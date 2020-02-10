@@ -162,65 +162,6 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5b3aefbf9228e",
-                "label": "Kind of Artist\/Cultural Worker",
-                "name": "kind_of_artist_cultural_worker",
-                "type": "text",
-                "instructions": "Ex. \"Painter\"",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "none",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5b3af00f92290",
-                "label": "Date & Places of Overlap with Loy",
-                "name": "date_places_of_overlap_with_loy",
-                "type": "textarea",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": 2,
-                "new_lines": "br"
-            },
-            {
-                "key": "field_5b3af03892291",
-                "label": "Avant-Garde Movements the Figure Was Associated With",
-                "name": "avantgarde_movements_the_figure_was_associated_with",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "none",
-                "maxlength": ""
-            },
-            {
                 "key": "field_5b3af4c30f75c",
                 "label": "Works Cited",
                 "name": "works_cited",
@@ -243,9 +184,9 @@
         "location": [
             [
                 {
-                    "param": "post_category",
+                    "param": "post_type",
                     "operator": "==",
-                    "value": "category:biography"
+                    "value": "dhs_biography"
                 }
             ]
         ],
@@ -256,11 +197,11 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "Biographical information, used in the Biographies content type"
     },
     {
         "key": "group_5c6319ccdf9cd",
-        "title": "Close Readings Left Text",
+        "title": "Close Readings: Left Text",
         "fields": [
             {
                 "key": "field_5a5c2aadf2f81",
@@ -368,9 +309,14 @@
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
-        "hide_on_screen": "",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments"
+        ],
         "active": true,
-        "description": ""
+        "description": "The text to be displayed in the left half of the Close Readings interface"
     },
     {
         "key": "group_5c6319ccec12f",
@@ -484,18 +430,37 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "The text to be displayed in the right half of the Close Readings interface"
     },
     {
-        "key": "group_5c79740a4909d",
-        "title": "Collection Metadata",
+        "key": "group_5da162f199929",
+        "title": "Collection: Collection Metadata",
         "fields": [
             {
-                "key": "field_5c79740a58f54",
+                "key": "field_5da162f19ffdd",
                 "label": "Collection Title",
-                "name": "ml_collection_title",
+                "name": "dhs_collection_title",
                 "type": "text",
-                "instructions": "",
+                "instructions": "Overall collection title, to be used in the <dc:title> tag. (Ex: the Mina Loy collection is titled \"Mina Loy Baedeker: Scholarly Handbook for Digital Travelers\")",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5da16370401f8",
+                "label": "Shorthand Reference",
+                "name": "dhs_shorthand_ref",
+                "type": "text",
+                "instructions": "Shorthand archive reference name, for use in the <collex:archive> field.  (Ex: Mina Loy collection uses the shorthand archive reference \"loy\")",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -510,11 +475,11 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5c79740a4d52d",
-                "label": "Authors",
-                "name": "dhs_authors",
+                "key": "field_5da4c58e64697",
+                "label": "Collection Federations",
+                "name": "dhs_federations",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Federation name for RDF Metadata, e.g. ModNets. Supports multiple values. Click \"Add Federation\" to add one or more Federations.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -526,10 +491,50 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "",
+                "button_label": "Add Federation",
                 "sub_fields": [
                     {
-                        "key": "field_5c79740a4ee77",
+                        "key": "field_5e41052913534",
+                        "label": "Federation",
+                        "name": "dhs_federation",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da162f1a03b0",
+                "label": "Authors",
+                "name": "dhs_authors",
+                "type": "repeater",
+                "instructions": "Author names for RDF Metadata. Supports multiple values. Click \"Add Author\" to add one or more Authors.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Author",
+                "sub_fields": [
+                    {
+                        "key": "field_5da162f1a4952",
                         "label": "Author",
                         "name": "dhs_author",
                         "type": "text",
@@ -550,11 +555,11 @@
                 ]
             },
             {
-                "key": "field_5c79740a51114",
+                "key": "field_5da162f1a6bba",
                 "label": "Editors",
-                "name": "dhs_authors",
+                "name": "dhs_editors",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Editor names for RDF Metadata. Supports multiple values. Click \"Add Editor\" to add one or more Editors.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -566,10 +571,10 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "",
+                "button_label": "Add Editor",
                 "sub_fields": [
                     {
-                        "key": "field_5c79740a5205b",
+                        "key": "field_5da162f1a7bd5",
                         "label": "Editor",
                         "name": "dhs_editor",
                         "type": "text",
@@ -590,11 +595,11 @@
                 ]
             },
             {
-                "key": "field_5c79740a53d11",
+                "key": "field_5da162f1a98d5",
                 "label": "Creators",
                 "name": "dhs_creators",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Creator names for RDF Metadata. Supports multiple values. Click \"Add Creator\" to add one or more Creators.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -606,10 +611,10 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "",
+                "button_label": "Add Creator",
                 "sub_fields": [
                     {
-                        "key": "field_5c79740a54ddd",
+                        "key": "field_5da162f1aaab0",
                         "label": "Creator",
                         "name": "dhs_creator",
                         "type": "text",
@@ -630,11 +635,11 @@
                 ]
             },
             {
-                "key": "field_5c79740a5a662",
+                "key": "field_5da162f1ac597",
                 "label": "Date",
                 "name": "dhs_date",
                 "type": "date_picker",
-                "instructions": "",
+                "instructions": "Date published, in DD\/MM\/YYYY format.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -647,11 +652,11 @@
                 "first_day": 0
             },
             {
-                "key": "field_5c79740a5bc1e",
+                "key": "field_5da162f1ad597",
                 "label": "Genres",
                 "name": "dhs_genres",
                 "type": "repeater",
-                "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
+                "instructions": "Genres for RDF Metadata. Supports multiple values. Click \"Add Genre\" to add one or more genres.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -666,7 +671,7 @@
                 "button_label": "Add Genre",
                 "sub_fields": [
                     {
-                        "key": "field_5c79740a5d36d",
+                        "key": "field_5da162f1ae4f9",
                         "label": "Genre",
                         "name": "dhs_genre",
                         "type": "select",
@@ -733,11 +738,11 @@
                 ]
             },
             {
-                "key": "field_5c79740a5fd44",
+                "key": "field_5da162f1b01e9",
                 "label": "Disciplines",
                 "name": "dhs_disciplines",
                 "type": "repeater",
-                "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
+                "instructions": "Disciplines for RDF Metadata. Supports multiple values. Click \"Add Displine\" to add one or more disciplines.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -752,9 +757,9 @@
                 "button_label": "Add Discipline",
                 "sub_fields": [
                     {
-                        "key": "field_5c79740a60dbd",
+                        "key": "field_5da162f1b17a8",
                         "label": "Discipline",
-                        "name": "dhs_disciplines",
+                        "name": "dhs_discipline",
                         "type": "select",
                         "instructions": "",
                         "required": 1,
@@ -805,9 +810,9 @@
                 ]
             },
             {
-                "key": "field_5c889a9ca4495",
+                "key": "field_5da162f1b342b",
                 "label": "Collex Text",
-                "name": "ml_collex_text",
+                "name": "dhs_collex_text",
                 "type": "textarea",
                 "instructions": "Text to be displayed in the <collex:text> field, as a description of the entire collection.",
                 "required": 0,
@@ -827,16 +832,14 @@
         "location": [
             [
                 {
-                    "param": "page_template",
+                    "param": "post_type",
                     "operator": "==",
-                    "value": "page-templates\/collectionpage.php"
-                }
-            ],
-            [
+                    "value": "dhs_collection"
+                },
                 {
-                    "param": "page_template",
+                    "param": "post_taxonomy",
                     "operator": "==",
-                    "value": "page-templates\/artifactcollectionpage.php"
+                    "value": "dhs_collection_type:collection"
                 }
             ]
         ],
@@ -847,7 +850,396 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "This is the metadata set used for top-level Collection objects.  There should only be one page with this template per Collection.  Child objects, called \"Chapters,\" can be added to this, and grandchild objects called \"Sections\" can be added to Chapters.  This page will automatically show a grid of all child Chapters."
+    },
+    {
+        "key": "group_5da2d2fb356ff",
+        "title": "Collection: Chapter Metadata",
+        "fields": [
+            {
+                "key": "field_5da2d2fb40cd0",
+                "label": "Chapter Title",
+                "name": "dhs_chapter_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5da2d2fb411fa",
+                "label": "Authors",
+                "name": "dhs_authors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Author",
+                "sub_fields": [
+                    {
+                        "key": "field_5da2d2fb4a9b9",
+                        "label": "Author",
+                        "name": "dhs_author",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da2d2fb4fa94",
+                "label": "Editors",
+                "name": "dhs_editors",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Editor",
+                "sub_fields": [
+                    {
+                        "key": "field_5da2d2fb52666",
+                        "label": "Editor",
+                        "name": "dhs_editor",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da2d2fb56b6b",
+                "label": "Creators",
+                "name": "dhs_creators",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Creator",
+                "sub_fields": [
+                    {
+                        "key": "field_5da2d2fb59267",
+                        "label": "Creator",
+                        "name": "dhs_creator",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da2d2fb5d547",
+                "label": "Date",
+                "name": "dhs_date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "F j, Y",
+                "return_format": "F j, Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5da2d2fb5f883",
+                "label": "Genres",
+                "name": "dhs_genres",
+                "type": "repeater",
+                "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Genre",
+                "sub_fields": [
+                    {
+                        "key": "field_5da2d2fb6207f",
+                        "label": "Genre",
+                        "name": "dhs_genre",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "advertisement": "Advertisement",
+                            "animation": "Animation",
+                            "bibliography": "Bibliography",
+                            "catalog": "Catalog",
+                            "chronology": "Chronology",
+                            "citation": "Citation",
+                            "collection": "Collection",
+                            "correspondence": "Correspondence",
+                            "criticism": "Criticism",
+                            "drama": "Drama",
+                            "ephemera": "Ephemera",
+                            "essay": "Essay",
+                            "fiction": "Fiction",
+                            "filmdocumentary": "Film, Documentary",
+                            "filmexperimental": "Film, Experimental",
+                            "filmnarrative": "Film, Narrative",
+                            "filmother": "Film, Other",
+                            "historiography": "Historiography",
+                            "interview": "Interview",
+                            "lifewriting": "Life Writing",
+                            "liturgy": "Liturgy",
+                            "musicalanalysis": "Musical Analysis",
+                            "musicother": "Music, Other",
+                            "musicalwork": "Musical Work",
+                            "musicalscore": "Musical Score",
+                            "nonfiction": "Nonfiction",
+                            "paratext": "Paratext",
+                            "performance": "Performance",
+                            "philosophy": "Philosophy",
+                            "photograph": "Photograph",
+                            "politicalstatement": "Political Statement",
+                            "poetry": "Poetry",
+                            "religion": "Religion",
+                            "referenceworks": "Reference Works",
+                            "review": "Review",
+                            "scripture": "Scripture",
+                            "sermon": "Sermon",
+                            "speech": "Speech",
+                            "translation": "Translation",
+                            "travelwriting": "Travel Writing",
+                            "unspecified": "Unspecified",
+                            "visualart": "Visual Art"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da2d2fb6570b",
+                "label": "Disciplines",
+                "name": "dhs_disciplines",
+                "type": "repeater",
+                "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Discipline",
+                "sub_fields": [
+                    {
+                        "key": "field_5da2d2fb67453",
+                        "label": "Discipline",
+                        "name": "dhs_discipline",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "anthropology": "Anthropology",
+                            "archaeology": "Archaeology",
+                            "architecture": "Architecture",
+                            "arthistory": "Art History",
+                            "artstudies": "Art Studies",
+                            "bookhistory": "Book History",
+                            "classics": "Classics, Ancient History",
+                            "dancestudies": "Dance Studies",
+                            "economics": "Economics",
+                            "education": "Education",
+                            "ethnicstudies": "Ethnic Studies",
+                            "filmstudies": "Film Studies",
+                            "genderstudies": "Gender Studies",
+                            "geography": "Geography",
+                            "history": "History",
+                            "laborstudies": "Labor Studies",
+                            "law": "Law",
+                            "literature": "Literature",
+                            "manuscriptstudies": "Manuscript Studies",
+                            "math": "Math",
+                            "musicstudies": "Music Studies",
+                            "philosophy": "Philosophy",
+                            "politicalscience": "Political Science",
+                            "religiousstudies": "Religious Studies",
+                            "science": "Science",
+                            "sociology": "Sociology",
+                            "soundstudies": "Sound Studies",
+                            "theaterstudies": "Theater Studies"
+                        },
+                        "default_value": [],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "array",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5da2d2fb6b626",
+                "label": "Peer Reviewed",
+                "name": "dhs_peer_reviewed",
+                "type": "checkbox",
+                "instructions": "Whether this chapter or collection has been peer reviewed",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Peer Reviewed"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_5da2d2fb6d819",
+                "label": "Peer Review Date",
+                "name": "dhs_peer_review_date",
+                "type": "date_picker",
+                "instructions": "The date of most recent peer review",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5da2d357e4d9e",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "dhs_collection"
+                },
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "collection-templates\/chapter.php"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "This is the metadata set used for second-level Collection objects, called \"Chapters,\" children of \"Books.\"  Chapters contain child objects called \"Sections.\""
     },
     {
         "key": "group_5c6319ccc2a2b",
@@ -1112,16 +1504,16 @@
                 {
                     "param": "post_category",
                     "operator": "==",
-                    "value": "41"
+                    "value": "category:flashmob"
                 }
             ]
         ],
-        "menu_order": 5,
+        "menu_order": 6,
         "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
-        "hide_on_screen": [],
+        "hide_on_screen": "",
         "active": true,
         "description": ""
     },
@@ -1151,7 +1543,7 @@
             {
                 "key": "field_5c6270ef66735",
                 "label": "Chapter Title",
-                "name": "dhs_chapter_title",
+                "name": "ml_chapter_title",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -1170,7 +1562,7 @@
             {
                 "key": "field_5c62709e5b91c",
                 "label": "Authors",
-                "name": "dhs_authors",
+                "name": "ml_authors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1189,7 +1581,7 @@
                     {
                         "key": "field_5c6270b35b91d",
                         "label": "Author",
-                        "name": "dhs_author",
+                        "name": "ml_author",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1210,7 +1602,7 @@
             {
                 "key": "field_5c6270d966733",
                 "label": "Editors",
-                "name": "dhs_authors",
+                "name": "ml_editors",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1229,7 +1621,7 @@
                     {
                         "key": "field_5c6270e766734",
                         "label": "Editor",
-                        "name": "dhs_editor",
+                        "name": "ml_editor",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1250,7 +1642,7 @@
             {
                 "key": "field_5c794c2f1d144",
                 "label": "Creators",
-                "name": "dhs_creators",
+                "name": "ml_creators",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -1269,7 +1661,7 @@
                     {
                         "key": "field_5c794c411d145",
                         "label": "Creator",
-                        "name": "dhs_creator",
+                        "name": "ml_creator",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -1290,7 +1682,7 @@
             {
                 "key": "field_5c62710b66738",
                 "label": "Date",
-                "name": "dhs_date",
+                "name": "ml_date",
                 "type": "date_picker",
                 "instructions": "",
                 "required": 0,
@@ -1307,7 +1699,7 @@
             {
                 "key": "field_5c62712566739",
                 "label": "Genres",
-                "name": "dhs_genres",
+                "name": "ml_genres",
                 "type": "repeater",
                 "instructions": "Use the \"Add Genre\" button to add as many genres as apply to this collection",
                 "required": 0,
@@ -1326,7 +1718,7 @@
                     {
                         "key": "field_5c6329ca2aa42",
                         "label": "Genre",
-                        "name": "dhs_genre",
+                        "name": "ml_genre",
                         "type": "select",
                         "instructions": "",
                         "required": 0,
@@ -1393,7 +1785,7 @@
             {
                 "key": "field_5c794cc5f6abe",
                 "label": "Disciplines",
-                "name": "dhs_disciplines",
+                "name": "ml_disciplines",
                 "type": "repeater",
                 "instructions": "Use the \"Add Discipline\" button to add as many disciplines as relate to this resource.  At least one is required.",
                 "required": 0,
@@ -1412,7 +1804,7 @@
                     {
                         "key": "field_5c794ce7f6abf",
                         "label": "Discipline",
-                        "name": "dhs_disciplines",
+                        "name": "ml_discipline",
                         "type": "select",
                         "instructions": "",
                         "required": 1,
@@ -1465,7 +1857,7 @@
             {
                 "key": "field_5c6da3fb25b05",
                 "label": "Peer Reviewed",
-                "name": "dhs_peer_reviewed",
+                "name": "ml_peer_reviewed",
                 "type": "checkbox",
                 "instructions": "Whether this chapter or collection has been peer reviewed",
                 "required": 0,
@@ -1488,7 +1880,7 @@
             {
                 "key": "field_5c7d45c948584",
                 "label": "Peer Review Date",
-                "name": "dhs_peer_review_date",
+                "name": "ml_reviewdate",
                 "type": "date_picker",
                 "instructions": "The date of most recent peer review",
                 "required": 0,
@@ -1516,121 +1908,24 @@
                 {
                     "param": "page_template",
                     "operator": "==",
-                    "value": "page-templates\/essaytitlepage.php"
+                    "value": "default"
                 }
             ],
             [
                 {
                     "param": "page_template",
                     "operator": "==",
-                    "value": "page-templates\/artifactpage.php"
-                }
-            ]
-        ],
-        "menu_order": 6,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": ""
-    },
-    {
-        "key": "group_5c6319ccd6d4c",
-        "title": "Peer Review Page",
-        "fields": [
-            {
-                "key": "field_5b3b207674b29",
-                "label": "Peer Reviewed",
-                "name": "peer_reviewed_page",
-                "type": "checkbox",
-                "instructions": "Has this essay or essay section (Page) been peer reviewed?",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "yes": "Peer Reviewed"
-                },
-                "allow_custom": 0,
-                "default_value": [],
-                "layout": "vertical",
-                "toggle": 0,
-                "return_format": "value",
-                "save_custom": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "page-templates\/essaypage.php"
+                    "value": "default"
                 }
             ]
         ],
         "menu_order": 7,
         "position": "normal",
-        "style": "seamless",
+        "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": false,
-        "description": ""
-    },
-    {
-        "key": "group_5c6319ccdb679",
-        "title": "Peer Review Post",
-        "fields": [
-            {
-                "key": "field_5b33485b9168a",
-                "label": "Peer Reviewed",
-                "name": "peer_reviewed_post",
-                "type": "checkbox",
-                "instructions": "Check this box if this post should be labeled with a \"Peer Reviewed\" seal.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "yes": "Peer Reviewed"
-                },
-                "default_value": [],
-                "layout": "horizontal",
-                "allow_custom": 0,
-                "save_custom": 0,
-                "toggle": 0,
-                "return_format": "value"
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "post"
-                },
-                {
-                    "param": "post_category",
-                    "operator": "==",
-                    "value": "42"
-                }
-            ]
-        ],
-        "menu_order": 8,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": [],
-        "active": true,
         "description": ""
     }
 ]
