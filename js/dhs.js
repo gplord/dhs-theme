@@ -104,7 +104,7 @@ jQuery(document).ready(function(){
 		jQuery('#pdf-progressbar').show();
 
 		// CUSTOMIZE: Replace these values with your Collection's PDF specifications
-		var pdfTitle = "My Theory of the En Dehors Garde";
+		var pdfTitle = "My Flash Mob Entries Collection";
 		var pageWidth = 8.5;	// Units are in inches -- see above constructor
 		var pageHeight = 11;
 		var lineHeight = 1.5;	// Line spacing, used in calculations throughout
@@ -119,7 +119,7 @@ jQuery(document).ready(function(){
 		var useFooterSiteLink = true;
 
 		// CUSTOMIZE: Add the URL to your Flash Mob entries page between the quotes on the next line, to have your Flash Mob URL appear on the bottom of the PDF
-		var footerSiteLinkURL = '';
+		var footerSiteLinkURL = 'https://www.gplord.com';
 
 		var siteWidth = 1110;	// Width in pixels of the website -- used to calculate image ratios
 		var maxHeight = 8;		// Maximum allowed height of images (in inches)

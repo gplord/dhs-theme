@@ -62,7 +62,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 						<?php $ids = explode(',', $_POST['ids']); ?>
 
-						<?php $query = new WP_Query( array( 'post_type' => 'post', 'post__in' => $ids ) ); ?>
+						<?php $query = new WP_Query( array( 'post_type' => 'dhs_flashmob', 'post__in' => $ids ) ); ?>
 
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 					
@@ -83,7 +83,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					<hr>
 					<div id="pdf">
 						
-						<?php $queryPDF = new WP_Query( array( 'post_type' => 'post', 'post__in' => $ids ) ); ?>
+						<?php $queryPDF = new WP_Query( array( 'post_type' => 'dhs_flashmob', 'post__in' => $ids ) ); ?>
 
 						<?php while ( $queryPDF->have_posts() ) : $queryPDF->the_post(); ?>
 					
