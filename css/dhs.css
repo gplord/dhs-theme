@@ -658,20 +658,20 @@ h5.closereading-title, .closereading-control-label {
   margin-bottom: 0.5em;
 }
 
-.biography-card {
+.biography-card, .collection-card {
   margin-bottom: 1.5em;
 }
 
-.biography-content p {
+.biography-content p, .collection-content p {
   font-size: 14pt;
 }
 
-.biography-content .row {
+.biography-content .row, .collection-content .row {
   border: none;
   padding-top: 0;
 }
 
-.biography-content .row+.row {
+.biography-content .row+.row, .collection-content .row+.row {
   border-top: 1px solid #eee;
   padding-top: 1em;
 }
@@ -946,11 +946,11 @@ a {
 
 /* Post(card)s Grid Items: "En Dehors Garde" from mina-loy.com" -------- */
 
-.edg-grid-item, .biography-grid-item {
+.edg-grid-item, .biography-grid-item, .collection-grid-item {
   margin-bottom: 1em;
 }
 
-.edg-grid-item h1, .biography-grid-item h1 {
+.edg-grid-item h1, .biography-grid-item h1, .collection-grid-item h1 {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
@@ -960,7 +960,7 @@ a {
   padding-bottom: 0;
 }
 
-.edg-grid-item article, .biography-grid-item article {
+.edg-grid-item article, .biography-grid-item article, .collection-grid-item article {
   background: #eee;
   border-radius: 5px;
   padding: 10px;
@@ -1180,7 +1180,7 @@ div.closereadings-metadata .excerpt {
   outline: none !important;
 }
 
-.biography-grid .pt-cv-custom-fields {
+.biography-grid .pt-cv-custom-fields, .collection-grid .pt-cv-custom-fields {
   font-size: 16px;
 }
 

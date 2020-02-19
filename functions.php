@@ -1,6 +1,7 @@
 <?php
 
 include('customizer.php');
+include('includes/dhs-custom-post-types.php');
 
 function understrap_remove_scripts()
 {

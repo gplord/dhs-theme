@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Book (Table of Contents)
+ * Template Name: Collection (Table of Contents)
  * Template Post Type: dhs_collection
  * Template for displaying a Collection page. (Collections are top-level pages, used as Table of Contents)
  * 
@@ -53,22 +53,22 @@ $container = get_theme_mod('understrap_container_type');
 												?>
 										<div class="col-md-3">
 
-											<div class="card biography-card">
+											<div class="card collection-card">
 
-												<div class="card-body biography-content">
+												<div class="card-body collection-content">
 													<?php
-																echo "<a href='" . get_the_permalink() . "'>";
-																echo get_the_post_thumbnail($parent->ID, array(200, 200));
-																echo "</a>";
-																?>
+														echo "<a href='" . get_the_permalink() . "'>";
+														echo get_the_post_thumbnail($parent->ID, array(200, 200));
+														echo "</a>";
+													?>
 												</div>
 												<div class="card-footer">
 													<?php
-																echo "<p><a href='" . get_the_permalink() . "'>" . get_the_title() . "</a></p>\n";
-																if (get_field('dhs_peer_reviewed')) {
-																	echo '<a class="btn btn-primary linkbutton peer-review-button" href="#">Peer Reviewed</a>';
-																}
-																?>
+														echo "<p><a href='" . get_the_permalink() . "'>" . get_the_title() . "</a></p>\n";
+														if (get_field('dhs_peer_reviewed')) {
+															echo '<a class="btn btn-primary linkbutton peer-review-button" href="#">Peer Reviewed</a>';
+														}
+													?>
 												</div>
 											</div>
 
