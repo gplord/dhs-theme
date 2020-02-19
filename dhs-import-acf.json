@@ -837,9 +837,9 @@
                     "value": "dhs_collection"
                 },
                 {
-                    "param": "post_taxonomy",
+                    "param": "post_template",
                     "operator": "==",
-                    "value": "dhs_collection_type:collection"
+                    "value": "collection-templates\/collection.php"
                 }
             ]
         ],
