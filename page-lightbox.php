@@ -38,18 +38,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							<button type="submit" class="btn btn-dark" value="Submit">View in Lightbox</button>
 						</form>-->					
 						<div class="row pdf-downloadbar">
-							<div class="col-md-9 text-left">
-								<p class="lightbox-label">Click and drag the posts below to rearrange them. Scroll down to read your custom formation in full. (Please view in Chrome or Firefox, as the PDF exporter may not work in other browsers.)</p>
-								<div id="pdf-progressbar">
-									<div class="progress">
-										<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-											Generating PDF: 20%
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 text-right">
-								<button class="btn btn-info pdfbutton">Download as PDF</button>
+							<div class="col-md-12 text-left">
+								<p class="lightbox-label">Click and drag the posts below to rearrange them. Print or scroll down to read your custom formation.</p>
 							</div>
 						</div>
 					</div>
