@@ -55,17 +55,18 @@ $authors = array();
 ?>
     </div>
 </div>
-
+    
+<?php
+    // check if the repeater field has rows of data
+    if( have_rows('dhs_editors') ):
+?>
 <div class="row">
     <div class="col-md-3">
         <h5>Editors</h5>
     </div>
     <div class="col-md-9">
-<?php
+        <?php
         $editors = array();
-        
-        // check if the repeater field has rows of data
-        if( have_rows('dhs_editors') ):
         
          	// loop through the rows of data
             while ( have_rows('dhs_editors') ) : the_row();
@@ -79,26 +80,29 @@ $authors = array();
                 echo "<br>";
         
             endwhile;
-        
+            ?>
+    </div>
+</div>
+<?php        
         else :
         
             // no rows found
         
         endif;
 ?>        
-    </div>
-</div>
+
+<?php
+// check if the repeater field has rows of data
+if( have_rows('dhs_creators') ):
+?>
 
 <div class="row">
     <div class="col-md-3">
         <h5>Creators</h5>
     </div>
     <div class="col-md-9">
-<?php
+        <?php
         $creators = array();
-        
-        // check if the repeater field has rows of data
-        if( have_rows('dhs_creators') ):
         
          	// loop through the rows of data
             while ( have_rows('dhs_creators') ) : the_row();
@@ -112,15 +116,16 @@ $authors = array();
                 echo "<br>";
         
             endwhile;
-        
+            ?>      
+    </div>
+</div>
+<?php        
         else :
         
             // no rows found
         
         endif;
-?>      
-    </div>
-</div>
+?>
 
 <div class="row">
     <div class="col-md-3">

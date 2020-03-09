@@ -73,5 +73,5 @@ endfor;
         
 ?>
     <!-- Relate this object to its parent object using dcterms:isPartOf-->
-    <dcterms:isPartOf rdf:resource="<?php echo get_theme_mod('collection_chapters_url', get_permalink()); ?>"/>
+    <dcterms:isPartOf rdf:resource="<?php echo get_permalink( $post->post_parent ); ?>"/>
 </mlna:Description>

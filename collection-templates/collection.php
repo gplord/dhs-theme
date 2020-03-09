@@ -92,8 +92,10 @@ $container = get_theme_mod('understrap_container_type');
 						<div class="collapse hide" id="metadataview" style="">
 							
 							<div class="metadata-box">
+
 								<?php include('metadata-collection.php'); ?>
 
+								<hr>
 								<h3>Chapter Metadata</h3>
 
 								<?php

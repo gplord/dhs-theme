@@ -1,6 +1,5 @@
 <h3>Collection Metadata</h3>
 
-
 <div class="row">
     <div class="col">
         <?php

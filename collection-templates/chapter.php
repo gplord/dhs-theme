@@ -104,6 +104,18 @@ wp_reset_postdata();
 
 				</main><!-- #main -->
 
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#metadataview" aria-expanded="true" aria-controls="metadataview">Show/Hide Collection Metadata</button>
+				<div class="collapse hide" id="metadataview" style="">
+					
+					<div class="metadata-box">
+
+
+								<?php include('metadata-chapter.php'); ?>
+
+					</div>
+
+				</div>
+
 			</div><!-- #primary -->
 
 		</div><!-- .row end -->
@@ -111,5 +123,9 @@ wp_reset_postdata();
 	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
+
+
+
+
 
 <?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<mlna:Description rdf:about="<?php echo get_theme_mod('collection_chapters_url', get_permalink()); ?>">
+<mlna:Description rdf:about="<?php echo get_permalink(); ?>">
 <?php
 for ($i = 0; $i < count($collection_federations); $i++) :
 ?>
@@ -25,7 +25,7 @@ for ($i = 0; $i < count($collection_creators); $i++) :
 <?php
 endfor;
 ?>
-	<dc:type>Interactive Resource</dc:type>
+    <dc:type>Interactive Resource</dc:type>
     <dc:type>Collection</dc:type>');
 <?php
 for ($i = 0; $i < count($collection_disciplines); $i++) :
@@ -41,10 +41,10 @@ endfor;
 // CUSTOMIZE: These values are hard-coded, as they are considered universal.  Change these values here if desired
 // TODO: Incorporate these into theme customizer Metadata tab?
 ?>
-	<collex:freeculture>True</collex:freeculture>
-	<collex:fulltext>True</collex:fulltext>');
-	<dc:date><?php echo get_field('dhs_date'); ?></dc:date>');
-	<collex:text><?php echo get_field('ml_collex_text'); ?></collex:text>
+    <collex:freeculture>True</collex:freeculture>
+    <collex:fulltext>True</collex:fulltext>');
+    <dc:date><?php echo get_field('dhs_date'); ?></dc:date>');
+    <collex:text><?php echo get_field('dhs_collex_text'); ?></collex:text>
     <rdfs:seeAlso rdf:resource="<?php echo $current_url; ?>"/>');
 <?php
     $id = get_the_ID();
@@ -62,7 +62,7 @@ endfor;
         while ($parent->have_posts()) : 
             $parent->the_post();
 ?>
-	<dcterms:hasPart rdf:resource="<?php echo get_permalink(); ?>"/>');
+    <dcterms:hasPart rdf:resource="<?php echo get_permalink(); ?>"/>');
 <?php
         endwhile;
     endif;
